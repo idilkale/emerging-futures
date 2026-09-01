@@ -1,0 +1,133 @@
+import type { Persona } from "./types";
+
+export const personas: Persona[] = [
+  {
+    id: "maya",
+    name: "Maya",
+    archetype: "The Creative Refuser",
+    color: "#00a3e0",
+    age: 18,
+    photo: "/Rectangle%208.png",
+    role: "High School Senior, Aspiring Artist",
+    location: "Tempe, AZ",
+    aiRelationship: "Skeptical / Resistant",
+    quote:
+      "I don't want to look at a portfolio of AI-generated work. It diminishes the whole creative process.",
+    wants: "To build a creative career without compromising her values.",
+    fears: "That speed becomes more valuable than originality.",
+    readinessMeans: "Proving original thinking is still worth paying for.",
+    background:
+      "A studio art student who avoids generative AI because she believes original thinking comes from creating everything herself. She'd rather spend more time making something than let AI do it for her.",
+    worldview: "Original work is worth protecting, even if it takes more time.",
+    strengths: ["Original thinking", "Deep focus", "Patience"],
+    trustQuestion: "What would it take for you to trust a tool you currently refuse to use?",
+  },
+  {
+    id: "jordan",
+    name: "Jordan",
+    archetype: "The Pragmatist",
+    color: "#ffc627",
+    age: 22,
+    photo: "/Rectangle%208-1.png",
+    role: "Recent Graduate, Business",
+    location: "Columbus, OH",
+    aiRelationship: "Practical / Adopting",
+    quote: "I don't care if it's AI or me typing — I care if it gets the offer.",
+    wants: "The most efficient path to a stable, well-paying job.",
+    fears: "Being penalized for using the tools everyone actually uses.",
+    readinessMeans: "Whatever gets results, verified or not.",
+    background:
+      "Graduated into a job market that rewards speed. Uses AI for everything from cover letters to interview prep and doesn't see the point in pretending otherwise.",
+    worldview: "The outcome matters more than how you got there.",
+    strengths: ["Efficiency", "Adaptability", "Results-focused"],
+    trustQuestion:
+      "What would it take for employers to stop caring how you got the answer, and start caring that it's right?",
+  },
+  {
+    id: "jesse",
+    name: "Jesse",
+    archetype: "The Returning Student",
+    color: "#78be20",
+    age: 46,
+    photo: "/Rectangle%208-2.png",
+    role: "Returning Student, Career Changer",
+    location: "Cleveland, OH",
+    aiRelationship: "Cautious / Re-learning",
+    quote: "Everything I knew how to do got automated. I'm starting over at 46.",
+    wants: "A real second chance, not just a certificate.",
+    fears: "Being too old to compete with graduates half his age.",
+    readinessMeans: "Proof that experience still counts for something.",
+    background:
+      "Spent two decades in logistics before automation eliminated his role. Went back to school to retrain, sitting in classrooms with people young enough to be his kids.",
+    worldview:
+      "Experience should count as much as credentials, even when the field has changed underneath you.",
+    strengths: ["Institutional memory", "Work ethic", "Perspective"],
+    trustQuestion:
+      "What would it take for an employer to value twenty years of a different kind of experience?",
+  },
+  {
+    id: "kali",
+    name: "Aiyana",
+    archetype: "The Experimenter",
+    color: "#8c1d40",
+    age: 21,
+    photo: "/Rectangle%208-3.png",
+    role: "Computer Science Student",
+    location: "Phoenix, AZ",
+    aiRelationship: "Enthusiastic / Experimental",
+    quote:
+      "I built four startups this year. None of them are real yet. All of them taught me something.",
+    wants: "Room to fail fast without it following her forever.",
+    fears: "That experimentation looks like flakiness on paper.",
+    readinessMeans: "A way to show iteration, not just outcomes.",
+    background:
+      "Treats every class project as a chance to prototype something new with AI tools, often abandoning ideas within weeks. Has more unfinished projects than finished ones, and isn't sure that's a problem.",
+    worldview:
+      "Trying ten things and finishing three is more valuable than finishing one thing safely.",
+    strengths: ["Rapid prototyping", "Comfort with failure", "Tool fluency"],
+    trustQuestion:
+      "What would it take for a résumé of abandoned experiments to read as ambition instead of inconsistency?",
+  },
+  {
+    id: "amina",
+    name: "Amina",
+    archetype: "The Empath",
+    color: "#ff7f32",
+    age: 30,
+    photo: "/Rectangle%208-4.png",
+    role: "Single Mother, Healthcare Worker",
+    location: "Detroit, MI",
+    aiRelationship: "Pragmatic / Time-constrained",
+    quote: "I don't have time to learn a new tool unless it gives me an hour back that day.",
+    wants: "Career growth that doesn't cost her the time she has with her kids.",
+    fears: "Falling behind because reskilling requires time she doesn't have.",
+    readinessMeans: "Flexible paths that fit around a life already full.",
+    background:
+      "Works full-time in patient care while raising two kids alone. Any new skill has to prove its value immediately, because she has no time to spend on tools that don't pay off.",
+    worldview: "Time is the real currency, not effort.",
+    strengths: ["Triage", "Empathy under pressure", "Relentless prioritization"],
+    trustQuestion:
+      "What would it take for career advancement to stop assuming everyone has unlimited time to invest in it?",
+  },
+  {
+    id: "leo",
+    name: "Leo",
+    archetype: "The Builder",
+    color: "#747474",
+    age: 20,
+    photo: "/Rectangle%208-5.png",
+    role: "Trade Apprentice, Robotics",
+    location: "Austin, TX",
+    aiRelationship: "Hands-on / Integrative",
+    quote: "I don't work with AI on a screen. I work next to it on the floor.",
+    wants: "Recognition that physical skill and technical skill are the same skill now.",
+    fears: "Being seen as a technician instead of the person actually responsible for the outcome.",
+    readinessMeans: "Proof he can work alongside autonomous systems, not just operate them.",
+    background:
+      "Apprenticing in a facility where robots handle routine assembly and people handle everything that requires judgment. Splits his day between a tablet and a wrench.",
+    worldview: "The best people on the floor speak both languages: mechanical and digital.",
+    strengths: ["Physical-digital fluency", "Safety judgment", "Systems thinking"],
+    trustQuestion:
+      "What would it take for a hands-on apprenticeship to be seen as equal to a four-year technical degree?",
+  },
+];
