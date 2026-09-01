@@ -4,57 +4,113 @@
 
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NHaasGroteskDSStd-45Lt.otf") format("opentype");
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayXXThin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayXXThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayXThin.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayXThinItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayThin.ttf") format("truetype");
+  font-weight: 250;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayThinItalic.ttf") format("truetype");
+  font-weight: 250;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayLight.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NHaasGroteskDSStd-46LtIt.otf") format("opentype");
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayLightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NHaasGroteskDSStd-55Rg.otf") format("opentype");
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayRoman.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NHaasGroteskDSStd-56It.otf") format("opentype");
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayRomanItalic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NHaasGroteskDSStd-65Md.otf") format("opentype");
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayMediu.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NHaasGroteskDSStd-66MdIt.otf") format("opentype");
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayMediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NHaasGroteskDSStd-75Bd.otf") format("opentype");
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayBold.ttf") format("truetype");
   font-weight: 600 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Neue Haas Grotesk Display Pro";
-  src: url("/fonts/NHaasGroteskDSStd-76BdIt.otf") format("opentype");
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayBoldItalic.ttf") format("truetype");
   font-weight: 600 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayBlack.ttf") format("truetype");
+  font-weight: 800 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("/fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayBlackItalic.ttf") format("truetype");
+  font-weight: 800 900;
   font-style: italic;
   font-display: swap;
 }

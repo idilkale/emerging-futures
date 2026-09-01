@@ -15,9 +15,6 @@ export function ExplorerSection() {
       <header className="sticky top-0 z-50 bg-navy">
         <div className="container-editorial flex h-16 items-center border-b border-paper/10">
           <InstitutionMark tone="light" />
-          <span className="label-mono ml-6 border border-paper/30 px-4 py-1.5 text-paper/80">
-            Emerging Futures Studio
-          </span>
         </div>
       </header>
 
