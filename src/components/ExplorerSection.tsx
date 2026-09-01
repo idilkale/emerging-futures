@@ -12,15 +12,17 @@ import { Reveal } from "./Reveal";
 export function ExplorerSection() {
   return (
     <div>
-      {/* hero */}
-      <section className="atmosphere grain relative overflow-hidden">
-        <div className="container-editorial relative flex h-16 items-center border-b border-paper/10">
+      <header className="sticky top-0 z-50 bg-navy">
+        <div className="container-editorial flex h-16 items-center border-b border-paper/10">
           <InstitutionMark tone="light" />
           <span className="label-mono ml-6 border border-paper/30 px-4 py-1.5 text-paper/80">
             Emerging Futures Studio
           </span>
         </div>
+      </header>
 
+      {/* hero */}
+      <section className="atmosphere grain relative overflow-hidden">
         <div className="container-editorial relative z-10 py-20 md:py-28">
           <div className="mt-10 max-w-2xl">
             <Reveal>
