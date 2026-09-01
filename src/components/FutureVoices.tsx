@@ -17,11 +17,11 @@ export function FutureVoices({ voices }: { voices: FutureVoice[] }) {
               &ldquo;{voice.quote}&rdquo;
             </p>
             <div className="mt-5 flex items-center gap-3">
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-paper-dim text-xs font-medium text-ink/60">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-paper-dim text-xs font-normal text-ink/60">
                 {initials}
               </span>
               <p className="text-sm text-ink/50">
-                <span className="font-medium text-ink/80">{voice.name}</span>
+                <span className="font-normal text-ink/80">{voice.name}</span>
                 {" — "}
                 {voice.context}
               </p>

@@ -31,7 +31,7 @@ export function PersonaPicker({ personas }: { personas: Persona[] }) {
                 </div>
 
                 <div className="mt-8">
-                  <div className="font-sans text-xl font-bold text-paper md:text-2xl">
+                  <div className="font-sans text-xl font-normal text-paper md:text-2xl">
                     {persona.name}, {persona.age}
                   </div>
                   <span

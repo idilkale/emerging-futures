@@ -154,7 +154,7 @@ export function ConstraintRegionsMap() {
 
       <div className="mt-6 flex flex-wrap justify-between gap-6">
         <div className="min-w-[180px] flex-1">
-          <p className="mb-2 text-sm font-medium text-[#8c1d40]">Declining industries</p>
+          <p className="mb-2 text-sm font-normal text-[#8c1d40]">Declining industries</p>
           <p className="text-xs leading-[1.8] text-ink/60">
             Traditional farming
             <br />
@@ -164,7 +164,7 @@ export function ConstraintRegionsMap() {
           </p>
         </div>
         <div className="min-w-[180px] flex-1 text-right">
-          <p className="mb-2 text-sm font-medium text-[#4f7a0f]">Growing industries</p>
+          <p className="mb-2 text-sm font-normal text-[#4f7a0f]">Growing industries</p>
           <p className="text-xs leading-[1.8] text-ink/60">
             Vertical farming
             <br />

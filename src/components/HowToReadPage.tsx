@@ -28,12 +28,12 @@ export function HowToReadPage() {
       <section className="border-b border-ink/10 pb-14 pt-14 md:pb-20 md:pt-20">
         <div className="container-editorial grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-10">
           <Reveal className="md:col-span-7">
-            <h1 className="text-balance font-sans text-display-2 font-bold leading-[1.03] text-ink">
+            <h1 className="text-balance font-sans text-display-2 font-normal leading-[1.03] text-ink">
               How to read the futures
             </h1>
           </Reveal>
           <Reveal delay={1} className="md:col-span-5">
-            <p className="text-balance text-edit font-light leading-relaxed text-ink/60">
+            <p className="text-balance text-edit font-normal leading-relaxed text-ink/60">
               The four futures combine different conditions across seven
               forces that shape higher education, work, and learning. Each
               future takes a different position on these axes. Together,
@@ -55,7 +55,7 @@ export function HowToReadPage() {
           <div id="seven-axes" className="scroll-mt-32">
             <Reveal>
               <SectionEyebrow index="01" label="The Seven Axes" />
-              <h2 className="text-balance font-sans text-display-3 font-medium leading-tight text-ink">
+              <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
                 The seven axes
               </h2>
               <p className="mt-3 text-copy leading-relaxed text-ink/50">
@@ -73,7 +73,7 @@ export function HowToReadPage() {
           <div id="understanding-axes" className="scroll-mt-32 border-t border-ink/10 pt-12 mt-12">
             <Reveal>
               <SectionEyebrow index="02" label="Understanding The Axes" />
-              <h2 className="text-balance font-sans text-display-3 font-medium leading-tight text-ink">
+              <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
                 Understanding the axes
               </h2>
               <p className="mt-3 text-copy leading-relaxed text-ink/50">
@@ -85,7 +85,7 @@ export function HowToReadPage() {
               <div className="mt-10 flex flex-col gap-10">
                 {axisDefinitions.map((axis) => (
                   <div key={axis.number}>
-                    <h3 className="font-sans text-lg font-medium text-ink md:text-xl">
+                    <h3 className="font-sans text-lg font-normal text-ink md:text-xl">
                       {axis.number} - {axis.label}
                     </h3>
                     <p className="mt-1 text-copy text-ink/50">{axis.question}</p>
@@ -95,7 +95,7 @@ export function HowToReadPage() {
                           key={option.label}
                           className="border-t-2 border-explorer-cyan bg-paper-dim/40 p-5"
                         >
-                          <p className="font-sans text-sm font-semibold text-ink">
+                          <p className="font-sans text-sm font-normal text-ink">
                             {option.label}
                           </p>
                           <p className="mt-2 text-sm leading-relaxed text-ink/60">
@@ -127,12 +127,12 @@ export function HowToReadPage() {
               </div>
 
               <div>
-                <h2 className="text-balance font-sans text-display-3 font-bold leading-[1.05] text-paper">
+                <h2 className="text-balance font-sans text-display-3 font-normal leading-[1.05] text-paper">
                   How the axes create a future
                 </h2>
 
                 <div className="mt-6 flex flex-col gap-4">
-                  <p className="text-balance text-copy font-light leading-relaxed text-paper/60">
+                  <p className="text-balance text-copy font-normal leading-relaxed text-paper/60">
                     A future where institutions remain trusted, labor changes
                     gradually, AI augments human work, and higher education
                     remains workforce-focused creates a very different system
@@ -142,7 +142,7 @@ export function HowToReadPage() {
                   </p>
                 </div>
 
-                <p className="mt-6 text-balance font-sans text-subhead font-bold leading-snug text-paper">
+                <p className="mt-6 text-balance font-sans text-subhead font-normal leading-snug text-paper">
                   The futures explore what becomes possible and what becomes
                   difficult when these forces move together.
                 </p>

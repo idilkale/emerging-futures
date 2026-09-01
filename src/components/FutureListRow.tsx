@@ -19,7 +19,7 @@ export function FutureListRow({ future }: { future: Future }) {
           <p className="mt-2 text-balance text-sm leading-relaxed text-paper/55">
             {future.tagline}
           </p>
-          <p className="mt-1 text-balance text-sm font-medium leading-relaxed text-paper/85">
+          <p className="mt-1 text-balance text-sm font-normal leading-relaxed text-paper/85">
             {future.homeQuestion}
           </p>
         </div>

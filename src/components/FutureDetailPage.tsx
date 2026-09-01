@@ -38,12 +38,12 @@ export function FutureDetailPage() {
       <section className="border-b border-ink/10 pb-0 pt-14 md:pt-20">
         <div className="container-editorial grid grid-cols-1 gap-8 pb-14 md:grid-cols-12 md:gap-10 md:pb-20">
           <Reveal className="md:col-span-7">
-            <h1 className="text-balance font-sans text-display-2 font-bold leading-[1.03] text-ink">
+            <h1 className="text-balance font-sans text-display-2 font-normal leading-[1.03] text-ink">
               {future.heroHeadline}
             </h1>
           </Reveal>
           <Reveal delay={1} className="md:col-span-5">
-            <p className="text-balance text-edit font-light leading-relaxed text-ink/60">
+            <p className="text-balance text-edit font-normal leading-relaxed text-ink/60">
               {future.heroIntro}
             </p>
           </Reveal>
@@ -85,7 +85,7 @@ export function FutureDetailPage() {
           <div id="how-it-started" className="scroll-mt-32 border-t border-ink/10 pt-12">
             <Reveal>
               <SectionEyebrow index="01" label="How It Started" />
-              <h2 className="text-balance font-sans text-display-3 font-medium leading-tight text-ink">
+              <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
                 {future.howItStartedTitle}
               </h2>
               <div className="mt-5 flex flex-col gap-4">
@@ -102,7 +102,7 @@ export function FutureDetailPage() {
           <div id="what-changed" className="scroll-mt-32 border-t border-ink/10 pt-12 mt-12">
             <Reveal>
               <SectionEyebrow index="02" label="What Changed" />
-              <h2 className="text-balance font-sans text-display-3 font-medium leading-tight text-ink">
+              <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
                 {future.whatChangedTitle}
               </h2>
               <p className="mt-5 text-balance text-copy leading-relaxed text-ink/65">
@@ -110,7 +110,7 @@ export function FutureDetailPage() {
               </p>
 
               <blockquote
-                className="my-8 border-l-2 pl-5 text-balance text-subhead font-bold leading-snug text-ink"
+                className="my-8 border-l-2 pl-5 text-balance text-subhead font-normal leading-snug text-ink"
                 style={{ borderColor: accent }}
               >
                 {future.pullQuote}
@@ -137,7 +137,7 @@ export function FutureDetailPage() {
           <div id="axis-positions" className="scroll-mt-32 border-t border-ink/10 pt-12 mt-12">
             <Reveal>
               <SectionEyebrow index="03" label="Axis Positions" />
-              <h2 className="text-balance font-sans text-display-3 font-medium leading-tight text-ink">
+              <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
                 The architecture of {future.codename.charAt(0) + future.codename.slice(1).toLowerCase()}
               </h2>
               <p className="mt-3 text-copy leading-relaxed text-ink/50">{future.axisSummary}</p>
@@ -151,7 +151,7 @@ export function FutureDetailPage() {
           <div id="future-indicators" className="scroll-mt-32 border-t border-ink/10 pt-12 mt-12">
             <Reveal>
               <SectionEyebrow index="04" label="Future Indicators" />
-              <h2 className="text-balance font-sans text-display-3 font-medium leading-tight text-ink">
+              <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
                 {future.indicatorTitle}
               </h2>
               <p className="mt-3 text-copy leading-relaxed text-ink/50">{future.indicatorSubtitle}</p>
@@ -168,7 +168,7 @@ export function FutureDetailPage() {
           <div id="three-voices" className="scroll-mt-32 border-t border-ink/10 pt-12 mt-12">
             <Reveal>
               <SectionEyebrow index="05" label="Three Voices" />
-              <h2 className="text-balance font-sans text-display-3 font-medium leading-tight text-ink">
+              <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
                 {future.threeVoicesTitle}
               </h2>
               <div className="mt-6">
@@ -181,7 +181,7 @@ export function FutureDetailPage() {
           <div id="emerging-careers" className="scroll-mt-32 border-t border-ink/10 pt-12 mt-12">
             <Reveal>
               <SectionEyebrow index="06" label="Emerging Careers" />
-              <h2 className="text-balance font-sans text-display-3 font-medium leading-tight text-ink">
+              <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
                 {future.careerHandoffTitle}
               </h2>
               <p className="mt-3 max-w-lg text-copy leading-relaxed text-ink/60">
@@ -204,7 +204,7 @@ export function FutureDetailPage() {
           <div id="readiness-implications" className="scroll-mt-32 border-t border-ink/10 pt-12 mt-12">
             <Reveal>
               <SectionEyebrow index="07" label="Readiness Implications" />
-              <h2 className="text-balance font-sans text-display-3 font-medium leading-tight text-ink">
+              <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
                 {future.readinessTitle}
               </h2>
               <p className="mt-5 max-w-xl text-balance text-copy leading-relaxed text-ink/65">
@@ -227,7 +227,7 @@ export function FutureDetailPage() {
               </div>
 
               <div>
-                <h2 className="text-balance font-sans text-display-3 font-bold leading-[1.05] text-paper">
+                <h2 className="text-balance font-sans text-display-3 font-normal leading-[1.05] text-paper">
                   {future.closingHeadline}
                 </h2>
 
@@ -235,14 +235,14 @@ export function FutureDetailPage() {
                   {future.closingBody.map((p) => (
                     <p
                       key={p}
-                      className="text-balance text-copy font-light leading-relaxed text-paper/60"
+                      className="text-balance text-copy font-normal leading-relaxed text-paper/60"
                     >
                       {p}
                     </p>
                   ))}
                 </div>
 
-                <p className="mt-6 text-balance font-sans text-subhead font-bold leading-snug text-paper">
+                <p className="mt-6 text-balance font-sans text-subhead font-normal leading-snug text-paper">
                   {future.closingQuestion}
                 </p>
               </div>
