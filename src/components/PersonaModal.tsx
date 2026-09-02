@@ -1,5 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, type CSSProperties } from "react";
+import html2canvas from "html2canvas";
+import { Download } from "lucide-react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { createPortal } from "react-dom";
 import { asset } from "../lib/asset";
 import type { Persona } from "../data/types";
@@ -10,6 +12,10 @@ interface PersonaModalProps {
 }
 
 export function PersonaModal({ persona, onClose }: PersonaModalProps) {
+  const frontRef = useRef<HTMLDivElement>(null);
+  const backRef = useRef<HTMLDivElement>(null);
+  const [downloading, setDownloading] = useState(false);
+
   useEffect(() => {
     if (!persona) return;
     const onKeyDown = (e: KeyboardEvent) => {
@@ -23,6 +29,76 @@ export function PersonaModal({ persona, onClose }: PersonaModalProps) {
       document.body.style.overflow = prevOverflow;
     };
   }, [persona, onClose]);
+
+  const handleDownload = async () => {
+    if (!persona || !frontRef.current || !backRef.current) return;
+    setDownloading(true);
+
+    const CARD_WIDTH = 480;
+    const stage = document.createElement("div");
+    stage.style.position = "fixed";
+    stage.style.top = "0";
+    stage.style.left = "-99999px";
+    stage.style.width = `${CARD_WIDTH}px`;
+
+    const prepareClone = (source: HTMLElement) => {
+      const clone = source.cloneNode(true) as HTMLElement;
+      clone.style.width = `${CARD_WIDTH}px`;
+      clone.style.maxWidth = `${CARD_WIDTH}px`;
+      clone.style.maxHeight = "none";
+      clone.style.height = "auto";
+      clone.style.overflow = "visible";
+      return clone;
+    };
+
+    const frontClone = prepareClone(frontRef.current);
+    const backClone = prepareClone(backRef.current);
+    stage.appendChild(frontClone);
+    stage.appendChild(backClone);
+    document.body.appendChild(stage);
+
+    try {
+      const images = Array.from(stage.querySelectorAll("img"));
+      await Promise.all(
+        images.map((img) =>
+          img.complete ? Promise.resolve() : new Promise((res) => (img.onload = img.onerror = () => res(null)))
+        )
+      );
+      // let the browser settle the reflowed layout before capturing
+      await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+
+      const capture = (el: HTMLElement) =>
+        html2canvas(el, {
+          backgroundColor: null,
+          scale: 2,
+          useCORS: true,
+          width: CARD_WIDTH,
+          windowWidth: CARD_WIDTH,
+        });
+
+      const frontCanvas = await capture(frontClone);
+      const backCanvas = await capture(backClone);
+
+      const width = Math.max(frontCanvas.width, backCanvas.width);
+      const combined = document.createElement("canvas");
+      combined.width = width;
+      combined.height = frontCanvas.height + backCanvas.height;
+      const ctx = combined.getContext("2d");
+      if (!ctx) return;
+      ctx.fillStyle = "#ffffff";
+      ctx.fillRect(0, 0, combined.width, combined.height);
+      ctx.drawImage(frontCanvas, 0, 0);
+      ctx.drawImage(backCanvas, 0, frontCanvas.height);
+
+      const link = document.createElement("a");
+      link.download = `${persona.id}-persona-card.png`;
+      link.href = combined.toDataURL("image/png");
+      link.click();
+    } finally {
+      document.body.removeChild(stage);
+      setDownloading(false);
+    }
+  };
 
   return createPortal(
     <AnimatePresence>
@@ -43,17 +119,32 @@ export function PersonaModal({ persona, onClose }: PersonaModalProps) {
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
             onClick={(e) => e.stopPropagation()}
           >
-            <button
-              type="button"
-              onClick={onClose}
-              aria-label="Close"
-              className="absolute right-4 top-4 z-10 flex h-9 w-9 items-center justify-center rounded-full border border-paper/30 text-paper transition-colors duration-300 hover:border-paper md:text-ink md:border-ink/20 md:hover:border-ink"
-            >
-              ✕
-            </button>
+            <div className="absolute right-4 top-4 z-10 flex items-center gap-2">
+              <button
+                type="button"
+                onClick={handleDownload}
+                disabled={downloading}
+                aria-label="Download persona card"
+                className="flex h-9 items-center gap-2 rounded-full border border-paper/30 px-3 text-paper transition-colors duration-300 hover:border-paper disabled:opacity-50 md:border-ink/20 md:text-ink md:hover:border-ink"
+              >
+                <Download className="h-4 w-4" strokeWidth={1.75} />
+                <span className="label-mono hidden sm:inline">
+                  {downloading ? "Preparing…" : "Download"}
+                </span>
+              </button>
+              <button
+                type="button"
+                onClick={onClose}
+                aria-label="Close"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-paper/30 text-paper transition-colors duration-300 hover:border-paper md:border-ink/20 md:text-ink md:hover:border-ink"
+              >
+                ✕
+              </button>
+            </div>
 
             {/* front */}
             <div
+              ref={frontRef}
               className="flex shrink-0 flex-col justify-between overflow-y-auto bg-navy p-8 md:w-[38%] md:p-10"
               style={{ "--pcolor": persona.color } as CSSProperties}
             >
@@ -64,12 +155,12 @@ export function PersonaModal({ persona, onClose }: PersonaModalProps) {
                   </span>
                 </div>
                 <span className="mt-3 block h-px w-full bg-[var(--pcolor)]" />
-                <p className="label-mono mt-3 text-paper/50">{persona.identity}</p>
               </div>
 
               <img
                 src={asset(persona.photo)}
                 alt={persona.name}
+                crossOrigin="anonymous"
                 className="my-8 aspect-square w-full rounded-xl object-cover"
               />
 
@@ -83,7 +174,7 @@ export function PersonaModal({ persona, onClose }: PersonaModalProps) {
             </div>
 
             {/* back */}
-            <div className="flex-1 overflow-y-auto p-8 md:p-10">
+            <div ref={backRef} className="flex-1 overflow-y-auto bg-paper p-8 md:p-10">
               <dl className="flex flex-col gap-6">
                 <div>
                   <dt className="label-mono text-ink/40">Background</dt>

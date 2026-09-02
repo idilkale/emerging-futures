@@ -73,7 +73,6 @@ export interface Persona {
   color: string;
   age: number;
   aiRelationship: string;
-  identity: string;
   photo: string;
   background: string;
   finances: string;
