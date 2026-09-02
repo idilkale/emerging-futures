@@ -1,8 +1,11 @@
-import type { CSSProperties } from "react";
+import { useState, type CSSProperties } from "react";
 import type { Persona } from "../data/types";
 import { asset } from "../lib/asset";
+import { PersonaModal } from "./PersonaModal";
 
 export function PersonaPicker({ personas }: { personas: Persona[] }) {
+  const [selected, setSelected] = useState<Persona | null>(null);
+
   return (
     <div className="grid grid-cols-2 gap-x-5 gap-y-8 sm:grid-cols-3">
       {personas.map((persona) => {
@@ -17,7 +20,11 @@ export function PersonaPicker({ personas }: { personas: Persona[] }) {
               className="absolute -top-3 left-6 h-4 w-16 rounded-t-md"
               style={{ background: persona.color }}
             />
-            <div className="relative flex flex-col overflow-hidden rounded-xl border border-paper/10 bg-navy transition-all duration-300 group-hover:border-[var(--pcolor)] group-hover:bg-navy-light group-hover:shadow-[0_0_0_1px_var(--pcolor-glow)]">
+            <button
+              type="button"
+              onClick={() => setSelected(persona)}
+              className="relative flex w-full flex-col overflow-hidden rounded-xl border border-paper/10 bg-navy text-left transition-all duration-300 group-hover:border-[var(--pcolor)] group-hover:bg-navy-light group-hover:shadow-[0_0_0_1px_var(--pcolor-glow)]"
+            >
               <div className="p-6">
                 <div className="flex items-start justify-between">
                   <img
@@ -41,10 +48,12 @@ export function PersonaPicker({ personas }: { personas: Persona[] }) {
                   <div className="mt-2 text-sm text-paper/50">{persona.archetype}</div>
                 </div>
               </div>
-            </div>
+            </button>
           </div>
         );
       })}
+
+      <PersonaModal persona={selected} onClose={() => setSelected(null)} />
     </div>
   );
 }

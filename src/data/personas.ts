@@ -7,20 +7,21 @@ export const personas: Persona[] = [
     archetype: "The Creative Refuser",
     color: "#00a3e0",
     age: 18,
+    aiRelationship: "Non-AI user",
+    identity: "Filipino American",
     photo: "/Rectangle%208.png",
-    role: "High School Senior, Aspiring Artist",
-    location: "Tempe, AZ",
-    aiRelationship: "Skeptical / Resistant",
-    quote:
-      "I don't want to look at a portfolio of AI-generated work. It diminishes the whole creative process.",
-    wants: "To build a creative career without compromising her values.",
-    fears: "That speed becomes more valuable than originality.",
-    readinessMeans: "Proving original thinking is still worth paying for.",
     background:
-      "A studio art student who avoids generative AI because she believes original thinking comes from creating everything herself. She'd rather spend more time making something than let AI do it for her.",
-    worldview: "Original work is worth protecting, even if it takes more time.",
+      "Maya is a first-generation studio art student who lives at home with her parents and younger siblings and works part-time at a café. Creating has always been one of the few places where she feels completely herself, and her studio critiques have reinforced her belief that the creative process matters as much as the finished work. She uses AI to organize deadlines, but refuses to use it to generate artwork or concepts.",
+    finances: "Paying for school through tuition assistance and income from her coffee shop job.",
+    worldview: "Original work is worth protecting, even when taking the longer and harder route.",
     strengths: ["Original thinking", "Deep focus", "Patience"],
-    trustQuestion: "What would it take for you to trust a tool you currently refuse to use?",
+    biggestFear: "Having to give up a creative career because it can't provide enough financial stability.",
+    successLooksLike:
+      "Building a sustainable creative career without compromising what makes her work feel like her own.",
+    inTheirShoes:
+      "If the work you care about starts rewarding speed over craft, what would you be willing to give up, and what wouldn't you?",
+    quote:
+      "I don't want to spend four years becoming an artist just to end up doing something completely different.",
   },
   {
     id: "jordan",
@@ -28,20 +29,21 @@ export const personas: Persona[] = [
     archetype: "The Pragmatist",
     color: "#ffc627",
     age: 22,
+    aiRelationship: "Everyday AI user",
+    identity: "African American",
     photo: "/Rectangle%208-1.png",
-    role: "Recent Graduate, Business",
-    location: "Columbus, OH",
-    aiRelationship: "Practical / Adopting",
-    quote: "I don't care if it's AI or me typing — I care if it gets the offer.",
-    wants: "The most efficient path to a stable, well-paying job.",
-    fears: "Being penalized for using the tools everyone actually uses.",
-    readinessMeans: "Whatever gets results, verified or not.",
     background:
-      "Graduated into a job market that rewards speed. Uses AI for everything from cover letters to interview prep and doesn't see the point in pretending otherwise.",
-    worldview: "The outcome matters more than how you got there.",
-    strengths: ["Efficiency", "Adaptability", "Results-focused"],
-    trustQuestion:
-      "What would it take for employers to stop caring how you got the answer, and start caring that it's right?",
+      "Jordan is a senior business student who has completed two internships while working part-time. His advisor has encouraged him to focus on practical experience alongside his degree, and with student loans to repay, he wants to find a full-time job quickly after graduation. He uses AI to summarize readings, brainstorm, and get through first drafts, but still rewrites and finishes the work himself.",
+    finances:
+      "Paying for school through merit scholarships, student loans, internship income, and part-time work.",
+    worldview: "If it helps you work smarter and get ahead, why not use it?",
+    strengths: ["Adaptability", "Efficiency", "Resourcefulness"],
+    biggestFear:
+      "Graduating with significant debt and not finding a stable job quickly enough to start paying it off.",
+    successLooksLike:
+      "Getting financially independent while staying flexible enough to take advantage of new opportunities.",
+    inTheirShoes: "If everyone has access to the same tools, what makes you worth hiring?",
+    quote: "I don't need my first job to be my dream job. I just need it to get me somewhere.",
   },
   {
     id: "jesse",
@@ -49,21 +51,20 @@ export const personas: Persona[] = [
     archetype: "The Returning Student",
     color: "#78be20",
     age: 46,
+    aiRelationship: "New to AI",
+    identity: "White American",
     photo: "/Rectangle%208-2.png",
-    role: "Returning Student, Career Changer",
-    location: "Cleveland, OH",
-    aiRelationship: "Cautious / Re-learning",
-    quote: "Everything I knew how to do got automated. I'm starting over at 46.",
-    wants: "A real second chance, not just a certificate.",
-    fears: "Being too old to compete with graduates half his age.",
-    readinessMeans: "Proof that experience still counts for something.",
     background:
-      "Spent two decades in logistics before automation eliminated his role. Went back to school to retrain, sitting in classrooms with people young enough to be his kids.",
-    worldview:
-      "Experience should count as much as credentials, even when the field has changed underneath you.",
-    strengths: ["Institutional memory", "Work ethic", "Perspective"],
-    trustQuestion:
-      "What would it take for an employer to value twenty years of a different kind of experience?",
+      "Jesse returned to college after years working as a lineman apprentice, hoping to build a second career that draws on his practical experience without requiring physically demanding work forever. Despite that experience, he still has to complete foundational coursework before moving into his engineering technology sequence. He is learning how to use AI for schoolwork and isn't always sure which tools are worth trusting.",
+    finances: "Paying for school through savings while continuing to work.",
+    worldview: "Real-world experience still matters, even when the tools and workplaces change.",
+    strengths: ["Curiosity", "Self-direction", "Experimentation"],
+    biggestFear:
+      "Having to relocate for a better opportunity when his family and responsibilities make moving unrealistic and difficult.",
+    successLooksLike:
+      "Building a second career without losing the stability, pay, and relationships he has spent decades creating.",
+    inTheirShoes: "If your experience tells you one thing but your education tells you another, which do you trust?",
+    quote: "Going back to school at 46 isn't about starting over. It's about making sure I can keep going.",
   },
   {
     id: "kali",
@@ -71,22 +72,21 @@ export const personas: Persona[] = [
     archetype: "The Experimenter",
     color: "#8c1d40",
     age: 21,
+    aiRelationship: "AI power user",
+    identity: "Cherokee Citizen",
     photo: "/Rectangle%208-3.png",
-    role: "Computer Science Student",
-    location: "Phoenix, AZ",
-    aiRelationship: "Enthusiastic / Experimental",
-    quote:
-      "I built four startups this year. None of them are real yet. All of them taught me something.",
-    wants: "Room to fail fast without it following her forever.",
-    fears: "That experimentation looks like flakiness on paper.",
-    readinessMeans: "A way to show iteration, not just outcomes.",
     background:
-      "Treats every class project as a chance to prototype something new with AI tools, often abandoning ideas within weeks. Has more unfinished projects than finished ones, and isn't sure that's a problem.",
-    worldview:
-      "Trying ten things and finishing three is more valuable than finishing one thing safely.",
-    strengths: ["Rapid prototyping", "Comfort with failure", "Tool fluency"],
-    trustQuestion:
-      "What would it take for a résumé of abandoned experiments to read as ambition instead of inconsistency?",
+      "Aiyana returned to college after taking time away to work and realizing her original career path wasn't right for her. Some of her previous coursework no longer fits cleanly into her new path, but she is using the opportunity to explore new possibilities. She uses AI to teach herself unfamiliar topics, test ideas, and manage projects.",
+    finances:
+      "Receives a scholarship through the Cherokee Nation along with federal financial aid and income from working while in school.",
+    worldview: "Careers don't have to follow one straight path, and technology makes it easier to explore new directions.",
+    strengths: ["Curiosity", "Self-direction", "Experimentation"],
+    biggestFear:
+      "Spending years moving from one path to another without ever feeling like she has actually gotten anywhere in her professional career.",
+    successLooksLike: "Finding a career that fits who she has become, not just the person she thought she would be at 18.",
+    inTheirShoes:
+      "When you're exploring a new direction, how do you know when you're discovering something for yourself versus following the easiest path?",
+    quote: "I'm not starting from zero, I'm just finally admitting that the path I was on wasn't mine.",
   },
   {
     id: "amina",
@@ -94,20 +94,19 @@ export const personas: Persona[] = [
     archetype: "The Empath",
     color: "#ff7f32",
     age: 30,
+    aiRelationship: "Cautious AI user",
+    identity: "Pacific Islander",
     photo: "/Rectangle%208-4.png",
-    role: "Single Mother, Healthcare Worker",
-    location: "Detroit, MI",
-    aiRelationship: "Pragmatic / Time-constrained",
-    quote: "I don't have time to learn a new tool unless it gives me an hour back that day.",
-    wants: "Career growth that doesn't cost her the time she has with her kids.",
-    fears: "Falling behind because reskilling requires time she doesn't have.",
-    readinessMeans: "Flexible paths that fit around a life already full.",
     background:
-      "Works full-time in patient care while raising two kids alone. Any new skill has to prove its value immediately, because she has no time to spend on tools that don't pay off.",
-    worldview: "Time is the real currency, not effort.",
-    strengths: ["Triage", "Empathy under pressure", "Relentless prioritization"],
-    trustQuestion:
-      "What would it take for career advancement to stop assuming everyone has unlimited time to invest in it?",
+      "Amina is a nursing student balancing school, a job as a waitress, and raising her child with help from family. Her clinical schedule makes that balance harder, but she sees nursing as an extension of the caregiving role she has always played. She uses AI cautiously for studying and administrative tasks, but is wary of relying on it for decisions that affect patients.",
+    finances: "Paying for school through savings, need-based scholarships, and income from working as a waitress.",
+    worldview: "Technology should make it easier for people to care for one another, not make human connection less important.",
+    strengths: ["Empathy", "Communication", "Dependability"],
+    biggestFear: "Having to choose between finishing school and being there for her child when she needs her.",
+    successLooksLike:
+      "Becoming a skilled healthcare professional while building a stable future for her child without losing the human connection that brought her to nursing.",
+    inTheirShoes: "If getting ahead requires more time than you have, what do you sacrifice first?",
+    quote: "I've always been the person people call when somebody needs help. I want to learn how to do that well.",
   },
   {
     id: "leo",
@@ -115,19 +114,19 @@ export const personas: Persona[] = [
     archetype: "The Builder",
     color: "#747474",
     age: 20,
+    aiRelationship: "AI developer",
+    identity: "Puerto Rican American",
     photo: "/Rectangle%208-5.png",
-    role: "Trade Apprentice, Robotics",
-    location: "Austin, TX",
-    aiRelationship: "Hands-on / Integrative",
-    quote: "I don't work with AI on a screen. I work next to it on the floor.",
-    wants: "Recognition that physical skill and technical skill are the same skill now.",
-    fears: "Being seen as a technician instead of the person actually responsible for the outcome.",
-    readinessMeans: "Proof he can work alongside autonomous systems, not just operate them.",
     background:
-      "Apprenticing in a facility where robots handle routine assembly and people handle everything that requires judgment. Splits his day between a tablet and a wrench.",
-    worldview: "The best people on the floor speak both languages: mechanical and digital.",
-    strengths: ["Physical-digital fluency", "Safety judgment", "Systems thinking"],
-    trustQuestion:
-      "What would it take for a hands-on apprenticeship to be seen as equal to a four-year technical degree?",
+      "Leo builds apps outside of school and earns additional income through freelance development. He sees college as a place to build the skills and network to eventually create something of his own, though he sometimes feels coursework moves slower than the technology he already uses. He uses AI as a coding partner and for rapid prototyping.",
+    finances:
+      "Scholarship recipient; parents also contribute to tuition and other college expenses, while freelance development provides additional income.",
+    worldview: "The people who build technology are responsible for thinking about what happens after they release it.",
+    strengths: ["Innovation", "Problem-solving", "Initiative"],
+    biggestFear:
+      "Graduating into an unstable technology industry where he has the skills to build things but cannot find a path into the field due to oversaturation and cuts.",
+    successLooksLike: "Building technology that is useful, responsible, and capable of creating opportunities for himself and others.",
+    inTheirShoes: "If you can build something before you fully understand its consequences, should you?",
+    quote: "I don't want to spend college preparing for a job that doesn't exist when I graduate.",
   },
 ];

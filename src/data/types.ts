@@ -72,18 +72,17 @@ export interface Persona {
   archetype: string;
   color: string;
   age: number;
-  photo: string;
-  role: string;
-  location: string;
   aiRelationship: string;
-  quote: string;
-  wants: string;
-  fears: string;
-  readinessMeans: string;
+  identity: string;
+  photo: string;
   background: string;
+  finances: string;
   worldview: string;
   strengths: string[];
-  trustQuestion: string;
+  biggestFear: string;
+  successLooksLike: string;
+  inTheirShoes: string;
+  quote: string;
 }
 
 export interface PersonaFutureNote {
