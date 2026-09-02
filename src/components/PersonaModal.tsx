@@ -99,15 +99,8 @@ export function PersonaModal({ persona, onClose }: PersonaModalProps) {
                 </div>
                 <div>
                   <dt className="label-mono text-ink/40">Strengths</dt>
-                  <dd className="mt-2 flex flex-wrap gap-2">
-                    {persona.strengths.map((s) => (
-                      <span
-                        key={s}
-                        className="rounded-full border border-ink/10 bg-paper-dim px-3 py-1 text-sm text-ink/75"
-                      >
-                        {s}
-                      </span>
-                    ))}
+                  <dd className="mt-2 text-copy leading-relaxed text-ink/75">
+                    {persona.strengths.join(", ")}
                   </dd>
                 </div>
                 <div>

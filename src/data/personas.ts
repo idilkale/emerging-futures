@@ -14,7 +14,7 @@ export const personas: Persona[] = [
       "Maya is a first-generation studio art student who lives at home with her parents and younger siblings and works part-time at a café. Creating has always been one of the few places where she feels completely herself, and her studio critiques have reinforced her belief that the creative process matters as much as the finished work. She uses AI to organize deadlines, but refuses to use it to generate artwork or concepts.",
     finances: "Paying for school through tuition assistance and income from her coffee shop job.",
     worldview: "Original work is worth protecting, even when taking the longer and harder route.",
-    strengths: ["Original thinking", "Deep focus", "Patience"],
+    strengths: ["Original thinking", "deep focus", "patience"],
     biggestFear: "Having to give up a creative career because it can't provide enough financial stability.",
     successLooksLike:
       "Building a sustainable creative career without compromising what makes her work feel like her own.",
@@ -37,7 +37,7 @@ export const personas: Persona[] = [
     finances:
       "Paying for school through merit scholarships, student loans, internship income, and part-time work.",
     worldview: "If it helps you work smarter and get ahead, why not use it?",
-    strengths: ["Adaptability", "Efficiency", "Resourcefulness"],
+    strengths: ["Adaptability", "efficiency", "resourcefulness"],
     biggestFear:
       "Graduating with significant debt and not finding a stable job quickly enough to start paying it off.",
     successLooksLike:
@@ -58,7 +58,7 @@ export const personas: Persona[] = [
       "Jesse returned to college after years working as a lineman apprentice, hoping to build a second career that draws on his practical experience without requiring physically demanding work forever. Despite that experience, he still has to complete foundational coursework before moving into his engineering technology sequence. He is learning how to use AI for schoolwork and isn't always sure which tools are worth trusting.",
     finances: "Paying for school through savings while continuing to work.",
     worldview: "Real-world experience still matters, even when the tools and workplaces change.",
-    strengths: ["Curiosity", "Self-direction", "Experimentation"],
+    strengths: ["Curiosity", "self-direction", "experimentation"],
     biggestFear:
       "Having to relocate for a better opportunity when his family and responsibilities make moving unrealistic and difficult.",
     successLooksLike:
@@ -80,7 +80,7 @@ export const personas: Persona[] = [
     finances:
       "Receives a scholarship through the Cherokee Nation along with federal financial aid and income from working while in school.",
     worldview: "Careers don't have to follow one straight path, and technology makes it easier to explore new directions.",
-    strengths: ["Curiosity", "Self-direction", "Experimentation"],
+    strengths: ["Curiosity", "self-direction", "experimentation"],
     biggestFear:
       "Spending years moving from one path to another without ever feeling like she has actually gotten anywhere in her professional career.",
     successLooksLike: "Finding a career that fits who she has become, not just the person she thought she would be at 18.",
@@ -101,7 +101,7 @@ export const personas: Persona[] = [
       "Amina is a nursing student balancing school, a job as a waitress, and raising her child with help from family. Her clinical schedule makes that balance harder, but she sees nursing as an extension of the caregiving role she has always played. She uses AI cautiously for studying and administrative tasks, but is wary of relying on it for decisions that affect patients.",
     finances: "Paying for school through savings, need-based scholarships, and income from working as a waitress.",
     worldview: "Technology should make it easier for people to care for one another, not make human connection less important.",
-    strengths: ["Empathy", "Communication", "Dependability"],
+    strengths: ["Empathy", "communication", "dependability"],
     biggestFear: "Having to choose between finishing school and being there for her child when she needs her.",
     successLooksLike:
       "Becoming a skilled healthcare professional while building a stable future for her child without losing the human connection that brought her to nursing.",
@@ -122,7 +122,7 @@ export const personas: Persona[] = [
     finances:
       "Scholarship recipient; parents also contribute to tuition and other college expenses, while freelance development provides additional income.",
     worldview: "The people who build technology are responsible for thinking about what happens after they release it.",
-    strengths: ["Innovation", "Problem-solving", "Initiative"],
+    strengths: ["Innovation", "problem-solving", "initiative"],
     biggestFear:
       "Graduating into an unstable technology industry where he has the skills to build things but cannot find a path into the field due to oversaturation and cuts.",
     successLooksLike: "Building technology that is useful, responsible, and capable of creating opportunities for himself and others.",
