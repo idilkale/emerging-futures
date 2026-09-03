@@ -8,7 +8,7 @@ export const personas: Persona[] = [
     color: "#00a3e0",
     age: 18,
     aiRelationship: "Non-AI user",
-    photo: "/Rectangle%208.png",
+    photo: "/personas-hq/maya.jpg",
     background:
       "Maya is a first-generation studio art student who lives at home with her parents and younger siblings and works part-time at a café. Creating has always been one of the few places where she feels completely herself, and her studio critiques have reinforced her belief that the creative process matters as much as the finished work. She uses AI to organize deadlines, but refuses to use it to generate artwork or concepts.",
     finances: "Paying for school through tuition assistance and income from her coffee shop job.",
@@ -29,7 +29,7 @@ export const personas: Persona[] = [
     color: "#ffc627",
     age: 22,
     aiRelationship: "Everyday AI user",
-    photo: "/Rectangle%208-1.png",
+    photo: "/personas-hq/jordan.jpg",
     background:
       "Jordan is a senior business student who has completed two internships while working part-time. His advisor has encouraged him to focus on practical experience alongside his degree, and with student loans to repay, he wants to find a full-time job quickly after graduation. He uses AI to summarize readings, brainstorm, and get through first drafts, but still rewrites and finishes the work himself.",
     finances:
@@ -50,7 +50,7 @@ export const personas: Persona[] = [
     color: "#78be20",
     age: 46,
     aiRelationship: "New to AI",
-    photo: "/Rectangle%208-2.png",
+    photo: "/personas-hq/jesse.jpg",
     background:
       "Jesse returned to college after years working as a lineman apprentice, hoping to build a second career that draws on his practical experience without requiring physically demanding work forever. Despite that experience, he still has to complete foundational coursework before moving into his engineering technology sequence. He is learning how to use AI for schoolwork and isn't always sure which tools are worth trusting.",
     finances: "Paying for school through savings while continuing to work.",
@@ -70,7 +70,7 @@ export const personas: Persona[] = [
     color: "#8c1d40",
     age: 21,
     aiRelationship: "AI power user",
-    photo: "/Rectangle%208-3.png",
+    photo: "/personas-hq/aiyana.jpg",
     background:
       "Aiyana returned to college after taking time away to work and realizing her original career path wasn't right for her. Some of her previous coursework no longer fits cleanly into her new path, but she is using the opportunity to explore new possibilities. She uses AI to teach herself unfamiliar topics, test ideas, and manage projects.",
     finances:
@@ -91,7 +91,7 @@ export const personas: Persona[] = [
     color: "#ff7f32",
     age: 30,
     aiRelationship: "Cautious AI user",
-    photo: "/Rectangle%208-4.png",
+    photo: "/personas-hq/amina.jpg",
     background:
       "Amina is a nursing student balancing school, a job as a waitress, and raising her child with help from family. Her clinical schedule makes that balance harder, but she sees nursing as an extension of the caregiving role she has always played. She uses AI cautiously for studying and administrative tasks, but is wary of relying on it for decisions that affect patients.",
     finances: "Paying for school through savings, need-based scholarships, and income from working as a waitress.",
@@ -110,7 +110,7 @@ export const personas: Persona[] = [
     color: "#747474",
     age: 20,
     aiRelationship: "AI developer",
-    photo: "/Rectangle%208-5.png",
+    photo: "/personas-hq/leo.jpg",
     background:
       "Leo builds apps outside of school and earns additional income through freelance development. He sees college as a place to build the skills and network to eventually create something of his own, though he sometimes feels coursework moves slower than the technology he already uses. He uses AI as a coding partner and for rapid prototyping.",
     finances:
