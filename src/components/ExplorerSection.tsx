@@ -20,30 +20,29 @@ export function ExplorerSection() {
 
       {/* hero */}
       <section className="atmosphere grain relative overflow-hidden">
-        <div className="container-editorial relative z-10 py-14 md:py-20">
+        <div className="container-editorial relative z-10 py-24 md:py-36 lg:py-44">
           <div className="max-w-2xl">
             <Reveal>
-              <h1 className="whitespace-nowrap font-sans text-display-1 font-normal leading-[0.98] text-paper">
+              <h1 className="whitespace-nowrap font-sans text-display-1 font-bold leading-[0.98] text-paper">
                 Welcome to 2036
               </h1>
             </Reveal>
             <Reveal delay={1}>
-              <p className="mt-6 max-w-xl text-balance text-edit font-normal leading-relaxed text-paper/65">
-                What does it mean to be career-ready when the goalpost keeps
-                moving?
+              <p className="mt-6 max-w-none whitespace-nowrap text-balance text-edit font-normal leading-relaxed text-paper/65">
+                What does it mean to be career-ready when the goalpost keeps moving?
               </p>
             </Reveal>
             <Reveal delay={2}>
               <div className="mt-9 flex flex-wrap items-center gap-4">
                 <a
                   href="#personas"
-                  className="label-mono bg-explorer-cyan px-6 py-3 text-ink transition-opacity hover:opacity-90"
+                  className="rounded-none bg-explorer-cyan px-6 py-3 font-sans text-base text-ink transition-opacity hover:opacity-90"
                 >
                   Choose your persona
                 </a>
                 <a
                   href="#futures"
-                  className="label-mono border border-paper/30 px-6 py-3 text-paper transition-colors duration-300 hover:border-paper"
+                  className="rounded-none border border-paper/30 px-6 py-3 font-sans text-base text-paper transition-colors duration-300 hover:border-paper"
                 >
                   Explore the futures
                 </a>
@@ -52,8 +51,8 @@ export function ExplorerSection() {
           </div>
         </div>
 
-        <div className="pointer-events-none absolute inset-x-0 -bottom-8 z-0 flex justify-end">
-          <div className="w-[215%] max-w-[2450px]">
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-0 flex justify-center">
+          <div className="w-[155%] max-w-[2050px]">
             <Reveal delay={2}>
               <img src={asset("hero-ribbon.png")} alt="" className="block h-auto w-full" />
             </Reveal>
