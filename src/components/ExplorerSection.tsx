@@ -20,7 +20,7 @@ export function ExplorerSection() {
 
       {/* hero */}
       <section className="atmosphere grain relative overflow-hidden">
-        <div className="container-editorial relative z-10 py-24 md:py-36 lg:py-44">
+        <div className="container-editorial relative z-10 py-32 md:py-44 lg:py-56">
           <div className="max-w-2xl">
             <Reveal>
               <h1 className="whitespace-nowrap font-sans text-display-1 font-bold leading-[0.98] text-paper">
@@ -51,7 +51,7 @@ export function ExplorerSection() {
           </div>
         </div>
 
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-0 flex justify-center">
+        <div className="pointer-events-none absolute inset-x-0 -bottom-10 z-0 flex justify-center">
           <div className="w-[155%] max-w-[2050px]">
             <Reveal delay={2}>
               <img src={asset("hero-ribbon.png")} alt="" className="block h-auto w-full" />
