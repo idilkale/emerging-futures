@@ -28,7 +28,7 @@ export function ExplorerSection() {
               </h1>
             </Reveal>
             <Reveal delay={1}>
-              <p className="mt-6 max-w-md text-balance text-edit font-normal leading-relaxed text-paper/65">
+              <p className="mt-6 max-w-xl text-balance text-edit font-normal leading-relaxed text-paper/65">
                 What does it mean to be career-ready when the goalpost keeps
                 moving?
               </p>
@@ -53,7 +53,7 @@ export function ExplorerSection() {
         </div>
 
         <div className="pointer-events-none absolute inset-x-0 -bottom-8 z-0 flex justify-end">
-          <div className="w-[185%] max-w-[2150px]">
+          <div className="w-[215%] max-w-[2450px]">
             <Reveal delay={2}>
               <img src={asset("hero-ribbon.png")} alt="" className="block h-auto w-full" />
             </Reveal>

@@ -59,7 +59,7 @@ export default {
         mono: ["'Neue Haas Grotesk Display Pro'", "Arial", "sans-serif"],
       },
       fontSize: {
-        "display-1": "clamp(2.5rem, 6.5vw, 6rem)",
+        "display-1": "clamp(2.75rem, 8vw, 7.5rem)",
         "display-2": "62px",
         "display-3": "46px",
         edit: "20px",
