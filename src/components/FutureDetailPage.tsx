@@ -80,7 +80,7 @@ export function FutureDetailPage() {
           <FutureSidebarNav />
         </div>
 
-        <div className="md:col-span-9 md:max-w-3xl">
+        <div className="md:col-span-9">
           {/* 01 how it started */}
           <div id="how-it-started" className="scroll-mt-32 border-t border-ink/10 pt-12">
             <Reveal>
@@ -200,7 +200,7 @@ export function FutureDetailPage() {
               <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
                 {future.careerHandoffTitle}
               </h2>
-              <p className="mt-3 max-w-lg text-copy leading-relaxed text-ink/60">
+              <p className="mt-3 text-copy leading-relaxed text-ink/60">
                 {future.careerHandoffBody}
               </p>
               <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -223,7 +223,7 @@ export function FutureDetailPage() {
               <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
                 {future.readinessTitle}
               </h2>
-              <p className="mt-5 max-w-xl text-balance text-copy leading-relaxed text-ink/65">
+              <p className="mt-5 text-balance text-copy leading-relaxed text-ink/65">
                 {future.careerReadiness}
               </p>
             </Reveal>
