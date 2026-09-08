@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import { useState, type CSSProperties } from "react";
 import type { Persona } from "../data/types";
 import { asset } from "../lib/asset";
@@ -23,7 +24,7 @@ export function PersonaPicker({ personas }: { personas: Persona[] }) {
             <button
               type="button"
               onClick={() => setSelected(persona)}
-              className="relative flex w-full flex-col overflow-hidden rounded-xl border border-paper/10 bg-navy text-left transition-all duration-300 group-hover:border-[var(--pcolor)] group-hover:bg-navy-light group-hover:shadow-[0_0_0_1px_var(--pcolor-glow)]"
+              className="relative flex h-full w-full flex-col overflow-hidden rounded-xl border border-paper/10 bg-navy text-left transition-all duration-300 group-hover:border-[var(--pcolor)] group-hover:bg-navy-light group-hover:shadow-[0_0_0_1px_var(--pcolor-glow)]"
             >
               <div className="p-6">
                 <div className="flex items-start justify-between">
@@ -33,7 +34,7 @@ export function PersonaPicker({ personas }: { personas: Persona[] }) {
                     className="h-24 w-24 shrink-0 rounded-full object-cover"
                   />
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-paper/20 text-paper/40 transition-colors duration-300 group-hover:border-[var(--pcolor)] group-hover:text-[var(--pcolor)]">
-                    ↗
+                    <ArrowUpRight className="h-4 w-4" strokeWidth={1.75} />
                   </span>
                 </div>
 
