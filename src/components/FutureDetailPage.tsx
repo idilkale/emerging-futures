@@ -35,7 +35,7 @@ export function FutureDetailPage() {
       <FutureTopNav activeSlug={future.slug} />
 
       {/* hero */}
-      <section className="border-b border-ink/10 pb-0 pt-14 md:pt-20">
+      <section className="pb-0 pt-14 md:border-b md:border-ink/10 md:pt-20">
         <div className="container-editorial grid grid-cols-1 gap-8 pb-14 md:grid-cols-12 md:gap-10 md:pb-20">
           <Reveal className="md:col-span-7">
             <h1 className="text-balance font-sans text-display-2 font-normal leading-[1.03] text-ink">
@@ -76,13 +76,13 @@ export function FutureDetailPage() {
 
       {/* body */}
       <section className="container-editorial grid grid-cols-1 gap-14 py-16 md:grid-cols-12 md:gap-10 md:py-24">
-        <div className="md:col-span-3">
+        <div className="hidden md:col-span-3 md:block">
           <FutureSidebarNav />
         </div>
 
         <div className="md:col-span-9 md:max-w-4xl">
           {/* 01 how it started */}
-          <div id="how-it-started" className="scroll-mt-32 border-t border-ink/10 pt-12">
+          <div id="how-it-started" className="scroll-mt-32 pt-12 md:border-t md:border-ink/10">
             <Reveal>
               <SectionEyebrow index="01" label="How It Started" />
               <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
