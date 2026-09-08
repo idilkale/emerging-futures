@@ -37,19 +37,19 @@ export function PersonaModal({ persona, onClose }: PersonaModalProps) {
           onClick={onClose}
         >
           <motion.div
-            className="relative flex max-h-[90vh] w-full max-w-4xl flex-col overflow-hidden rounded-xl bg-paper shadow-2xl md:flex-row"
+            className="flex max-h-[90vh] w-full max-w-4xl flex-col overflow-hidden rounded-xl bg-paper shadow-2xl"
             initial={{ opacity: 0, scale: 0.96, y: 12 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96, y: 12 }}
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="absolute right-4 top-4 z-10 flex items-center gap-2">
+            <div className="flex shrink-0 items-center justify-end gap-2 bg-navy px-4 py-3">
               <a
                 href={asset(`personas-cards/${persona.id}.png`)}
                 download={`${persona.id}-persona-card.png`}
                 aria-label="Download persona card as PNG"
-                className="flex h-9 items-center gap-2 rounded-full border border-paper/30 bg-navy/70 px-3 text-paper backdrop-blur-sm transition-colors duration-300 hover:border-paper md:border-ink/20 md:bg-paper/90 md:text-ink md:hover:border-ink"
+                className="flex h-9 items-center gap-2 rounded-full border border-paper/30 px-3 text-paper transition-colors duration-300 hover:border-paper"
               >
                 <Download className="h-4 w-4" strokeWidth={1.75} />
                 <span className="label-mono hidden sm:inline">Download PNG</span>
@@ -58,99 +58,101 @@ export function PersonaModal({ persona, onClose }: PersonaModalProps) {
                 type="button"
                 onClick={onClose}
                 aria-label="Close"
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-paper/30 bg-navy/70 text-paper backdrop-blur-sm transition-colors duration-300 hover:border-paper md:border-ink/20 md:bg-paper/90 md:text-ink md:hover:border-ink"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-paper/30 text-paper transition-colors duration-300 hover:border-paper"
               >
                 ✕
               </button>
             </div>
 
-            {/* front */}
-            <div
-              className="flex min-h-0 shrink-0 flex-col justify-between overflow-y-auto bg-navy p-6 md:w-[38%] md:p-10"
-              style={{ "--pcolor": persona.color } as CSSProperties}
-            >
-              <div className="flex items-center gap-4 md:hidden">
+            <div className="flex min-h-0 flex-1 flex-col overflow-hidden md:flex-row">
+              {/* front */}
+              <div
+                className="flex min-h-0 shrink-0 flex-col justify-between overflow-y-auto bg-navy p-6 md:w-[38%] md:p-10"
+                style={{ "--pcolor": persona.color } as CSSProperties}
+              >
+                <div className="flex items-center gap-4 md:hidden">
+                  <img
+                    src={asset(persona.photo)}
+                    alt={persona.name}
+                    className="aspect-square w-16 shrink-0 rounded-xl object-cover"
+                  />
+                  <div className="min-w-0">
+                    <div className="font-sans text-xl font-normal text-paper">{persona.name}</div>
+                    <div className="mt-1 inline-block font-sans text-base font-normal text-ink">
+                      <span className="text-paper">The </span>
+                      <span className="bg-[var(--pcolor)] px-1.5">{persona.archetype.replace(/^The /, "")}</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-4 md:mt-0">
+                  <div className="label-mono flex items-center justify-between text-paper/70">
+                    <span>
+                      {persona.age}, {persona.aiRelationship}
+                    </span>
+                  </div>
+                  <span className="mt-3 block h-px w-full bg-[var(--pcolor)]" />
+                </div>
+
                 <img
                   src={asset(persona.photo)}
                   alt={persona.name}
-                  className="aspect-square w-16 shrink-0 rounded-xl object-cover"
+                  className="hidden aspect-square w-full rounded-xl object-cover md:my-8 md:block"
                 />
-                <div className="min-w-0">
-                  <div className="font-sans text-xl font-normal text-paper">{persona.name}</div>
-                  <div className="mt-1 inline-block font-sans text-base font-normal text-ink">
+
+                <div className="hidden md:block">
+                  <div className="font-sans text-2xl font-normal text-paper md:text-3xl">{persona.name}</div>
+                  <div className="mt-1 inline-block font-sans text-xl font-normal text-ink md:text-2xl">
                     <span className="text-paper">The </span>
                     <span className="bg-[var(--pcolor)] px-1.5">{persona.archetype.replace(/^The /, "")}</span>
                   </div>
                 </div>
               </div>
 
-              <div className="mt-4 md:mt-0">
-                <div className="label-mono flex items-center justify-between text-paper/70">
-                  <span>
-                    {persona.age}, {persona.aiRelationship}
+              {/* back */}
+              <div className="min-h-0 flex-1 overflow-y-auto bg-paper p-8 md:p-10">
+                <dl className="flex flex-col gap-6">
+                  <div>
+                    <dt className="label-mono text-ink/40">Background</dt>
+                    <dd className="mt-2 text-copy leading-relaxed text-ink/75">{persona.background}</dd>
+                  </div>
+                  <div>
+                    <dt className="label-mono text-ink/40">Finances</dt>
+                    <dd className="mt-2 text-copy leading-relaxed text-ink/75">{persona.finances}</dd>
+                  </div>
+                  <div>
+                    <dt className="label-mono text-ink/40">Worldview</dt>
+                    <dd className="mt-2 text-copy leading-relaxed text-ink/75">{persona.worldview}</dd>
+                  </div>
+                  <div>
+                    <dt className="label-mono text-ink/40">Strengths</dt>
+                    <dd className="mt-2 text-copy leading-relaxed text-ink/75">
+                      {persona.strengths.join(", ")}
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="label-mono text-ink/40">Biggest fear</dt>
+                    <dd className="mt-2 text-copy leading-relaxed text-ink/75">{persona.biggestFear}</dd>
+                  </div>
+                  <div>
+                    <dt className="label-mono text-ink/40">Success looks like</dt>
+                    <dd className="mt-2 text-copy leading-relaxed text-ink/75">{persona.successLooksLike}</dd>
+                  </div>
+                </dl>
+
+                <span className="mt-8 block h-px w-full" style={{ background: persona.color }} />
+
+                <div className="mt-8">
+                  <p className="label-mono text-ink/40">In their shoes</p>
+                  <p className="mt-2 text-balance font-sans text-lg leading-snug text-ink">{persona.inTheirShoes}</p>
+                </div>
+
+                <div className="relative mt-6 rounded-xl bg-navy p-6 pl-12 text-paper">
+                  <span className="absolute left-4 top-3 font-sans text-3xl leading-none text-paper/40">
+                    &ldquo;
                   </span>
+                  <p className="text-balance text-copy italic leading-relaxed text-paper/85">{persona.quote}</p>
                 </div>
-                <span className="mt-3 block h-px w-full bg-[var(--pcolor)]" />
-              </div>
-
-              <img
-                src={asset(persona.photo)}
-                alt={persona.name}
-                className="hidden aspect-square w-full rounded-xl object-cover md:my-8 md:block"
-              />
-
-              <div className="hidden md:block">
-                <div className="font-sans text-2xl font-normal text-paper md:text-3xl">{persona.name}</div>
-                <div className="mt-1 inline-block font-sans text-xl font-normal text-ink md:text-2xl">
-                  <span className="text-paper">The </span>
-                  <span className="bg-[var(--pcolor)] px-1.5">{persona.archetype.replace(/^The /, "")}</span>
-                </div>
-              </div>
-            </div>
-
-            {/* back */}
-            <div className="min-h-0 flex-1 overflow-y-auto bg-paper p-8 md:p-10">
-              <dl className="flex flex-col gap-6">
-                <div>
-                  <dt className="label-mono text-ink/40">Background</dt>
-                  <dd className="mt-2 text-copy leading-relaxed text-ink/75">{persona.background}</dd>
-                </div>
-                <div>
-                  <dt className="label-mono text-ink/40">Finances</dt>
-                  <dd className="mt-2 text-copy leading-relaxed text-ink/75">{persona.finances}</dd>
-                </div>
-                <div>
-                  <dt className="label-mono text-ink/40">Worldview</dt>
-                  <dd className="mt-2 text-copy leading-relaxed text-ink/75">{persona.worldview}</dd>
-                </div>
-                <div>
-                  <dt className="label-mono text-ink/40">Strengths</dt>
-                  <dd className="mt-2 text-copy leading-relaxed text-ink/75">
-                    {persona.strengths.join(", ")}
-                  </dd>
-                </div>
-                <div>
-                  <dt className="label-mono text-ink/40">Biggest fear</dt>
-                  <dd className="mt-2 text-copy leading-relaxed text-ink/75">{persona.biggestFear}</dd>
-                </div>
-                <div>
-                  <dt className="label-mono text-ink/40">Success looks like</dt>
-                  <dd className="mt-2 text-copy leading-relaxed text-ink/75">{persona.successLooksLike}</dd>
-                </div>
-              </dl>
-
-              <span className="mt-8 block h-px w-full" style={{ background: persona.color }} />
-
-              <div className="mt-8">
-                <p className="label-mono text-ink/40">In their shoes</p>
-                <p className="mt-2 text-balance font-sans text-lg leading-snug text-ink">{persona.inTheirShoes}</p>
-              </div>
-
-              <div className="relative mt-6 rounded-xl bg-navy p-6 pl-12 text-paper">
-                <span className="absolute left-4 top-3 font-sans text-3xl leading-none text-paper/40">
-                  &ldquo;
-                </span>
-                <p className="text-balance text-copy italic leading-relaxed text-paper/85">{persona.quote}</p>
               </div>
             </div>
           </motion.div>
