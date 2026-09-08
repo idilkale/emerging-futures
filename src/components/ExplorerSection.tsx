@@ -51,8 +51,8 @@ export function ExplorerSection() {
           </div>
         </div>
 
-        <div className="pointer-events-none absolute inset-x-0 -bottom-10 z-0 hidden justify-center sm:flex">
-          <div className="w-[155%] max-w-[2050px]">
+        <div className="pointer-events-none absolute inset-x-0 -bottom-6 z-0 hidden justify-center sm:flex">
+          <div className="w-[120%] max-w-[1900px] shrink-0">
             <Reveal delay={2}>
               <img src={asset("hero-ribbon.png")} alt="" className="block h-auto w-full" />
             </Reveal>
