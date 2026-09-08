@@ -43,7 +43,7 @@ export function FutureDetailPage() {
             </h1>
           </Reveal>
           <Reveal delay={1} className="md:col-span-5">
-            <p className="text-balance text-edit font-normal leading-relaxed text-ink/60">
+            <p className="text-edit font-normal leading-relaxed text-ink/60">
               {future.heroIntro}
             </p>
           </Reveal>
@@ -90,7 +90,7 @@ export function FutureDetailPage() {
               </h2>
               <div className="mt-5 flex flex-col gap-4">
                 {future.howItStartedBody.map((p) => (
-                  <p key={p} className="text-balance text-copy leading-relaxed text-ink/65">
+                  <p key={p} className="text-copy leading-relaxed text-ink/65">
                     {p}
                   </p>
                 ))}
@@ -107,7 +107,7 @@ export function FutureDetailPage() {
               </h2>
               <div className="mt-5 flex flex-col gap-4">
                 {future.whatChangedBefore.map((p) => (
-                  <p key={p} className="text-balance text-copy leading-relaxed text-ink/65">
+                  <p key={p} className="text-copy leading-relaxed text-ink/65">
                     {p}
                   </p>
                 ))}
@@ -141,7 +141,7 @@ export function FutureDetailPage() {
 
               <div className="mt-5 flex flex-col gap-4">
                 {future.whatChangedAfter.map((p) => (
-                  <p key={p} className="text-balance text-copy leading-relaxed text-ink/65">
+                  <p key={p} className="text-copy leading-relaxed text-ink/65">
                     {p}
                   </p>
                 ))}
@@ -223,7 +223,7 @@ export function FutureDetailPage() {
               <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
                 {future.readinessTitle}
               </h2>
-              <p className="mt-5 text-balance text-copy leading-relaxed text-ink/65">
+              <p className="mt-5 text-copy leading-relaxed text-ink/65">
                 {future.careerReadiness}
               </p>
             </Reveal>
@@ -251,7 +251,7 @@ export function FutureDetailPage() {
                   {future.closingBody.map((p) => (
                     <p
                       key={p}
-                      className="text-balance text-copy font-normal leading-relaxed text-paper/60"
+                      className="text-copy font-normal leading-relaxed text-paper/60"
                     >
                       {p}
                     </p>
