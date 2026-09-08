@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export interface SidebarSection {
   id: string;
@@ -72,6 +73,12 @@ export function FutureSidebarNav({
             );
           })}
         </ul>
+        <Link
+          to="/#futures"
+          className="mt-6 inline-block rounded-none bg-explorer-cyan px-5 py-2.5 font-sans text-sm text-ink transition-opacity hover:opacity-90"
+        >
+          Explore the futures
+        </Link>
       </div>
     </nav>
   );

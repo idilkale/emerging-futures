@@ -105,9 +105,13 @@ export function FutureDetailPage() {
               <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
                 {future.whatChangedTitle}
               </h2>
-              <p className="mt-5 text-balance text-copy leading-relaxed text-ink/65">
-                {future.whatChangedBefore}
-              </p>
+              <div className="mt-5 flex flex-col gap-4">
+                {future.whatChangedBefore.map((p) => (
+                  <p key={p} className="text-balance text-copy leading-relaxed text-ink/65">
+                    {p}
+                  </p>
+                ))}
+              </div>
 
               <blockquote
                 className="my-8 border-l-2 pl-5 text-balance text-subhead font-normal leading-snug text-ink"
@@ -116,20 +120,32 @@ export function FutureDetailPage() {
                 {future.pullQuote}
               </blockquote>
 
-              <div
-                className="aspect-[16/9] w-full rounded-lg"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(45deg, #e6e6e6 25%, transparent 25%), linear-gradient(-45deg, #e6e6e6 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #e6e6e6 75%), linear-gradient(-45deg, transparent 75%, #e6e6e6 75%)",
-                  backgroundSize: "24px 24px",
-                  backgroundPosition: "0 0, 0 12px, 12px -12px, -12px 0px",
-                  backgroundColor: "#f7f7f7",
-                }}
-              />
+              {future.whatChangedImage ? (
+                <img
+                  src={asset(future.whatChangedImage)}
+                  alt=""
+                  className="aspect-[16/9] w-full rounded-lg object-cover"
+                />
+              ) : (
+                <div
+                  className="aspect-[16/9] w-full rounded-lg"
+                  style={{
+                    backgroundImage:
+                      "linear-gradient(45deg, #e6e6e6 25%, transparent 25%), linear-gradient(-45deg, #e6e6e6 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #e6e6e6 75%), linear-gradient(-45deg, transparent 75%, #e6e6e6 75%)",
+                    backgroundSize: "24px 24px",
+                    backgroundPosition: "0 0, 0 12px, 12px -12px, -12px 0px",
+                    backgroundColor: "#f7f7f7",
+                  }}
+                />
+              )}
 
-              <p className="mt-5 text-balance text-copy leading-relaxed text-ink/65">
-                {future.whatChangedAfter}
-              </p>
+              <div className="mt-5 flex flex-col gap-4">
+                {future.whatChangedAfter.map((p) => (
+                  <p key={p} className="text-balance text-copy leading-relaxed text-ink/65">
+                    {p}
+                  </p>
+                ))}
+              </div>
             </Reveal>
           </div>
 

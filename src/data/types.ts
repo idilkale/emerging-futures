@@ -49,9 +49,10 @@ export interface Future {
   howItStartedTitle: string;
   howItStartedBody: string[];
   whatChangedTitle: string;
-  whatChangedBefore: string;
+  whatChangedBefore: string[];
   pullQuote: string;
-  whatChangedAfter: string;
+  whatChangedImage?: string;
+  whatChangedAfter: string[];
   axisSummary: string;
   indicatorTitle: string;
   indicatorSubtitle: string;

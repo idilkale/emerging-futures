@@ -33,7 +33,7 @@ export const futures: Future[] = [
       "Verification and compliance officer",
     ],
     careerReadiness:
-      "Students need new, credible ways to demonstrate practical experience before they are ever given a traditional entry-level opportunity.",
+      "Judgment, adaptability, and the ability to work across human and machine teams matter more now than any single technical specialty, because the specialty itself has a short shelf life. Success depends less on what someone already knows and more on how fast they can learn the next thing. Time and financial slack become part of what it takes to stay competitive, even in a future where nothing looks broken.",
     aiLevel: 78,
     trustLevel: 38,
     accent: "#ff7f32",
@@ -42,23 +42,31 @@ export const futures: Future[] = [
     heroHeadline: "Nobody noticed the ladder disappear",
     heroIntro:
       "Ask anyone to name the day the old career ladder disappeared and they'll struggle. There wasn't one. That's the story.",
-    heroImage: "/future1.png",
+    heroImage: "/futures/future1.png",
     howItStartedTitle: "It started with the work nobody wanted to do",
     howItStartedBody: [
-      "By 2026, the entry-level work that once trained people by letting them make small, forgiving mistakes was largely gone from offices and factory floors alike. Nobody would have called it a crisis. It happened too slowly and too evenly for that word to fit — institutions adapted, employers adjusted, and each individual change looked reasonable on its own.",
-      "AI didn't take one big visible job. It absorbed the small ones underneath it — the first draft, the first pass, the first attempt — until the rung built from those small attempts simply stopped existing.",
+      "By 2036, the entry level work that trained you by giving you small, forgiving mistakes to make is largely gone, in offices and on factory floors alike. Nobody would call this a crisis. It happened too slowly and too evenly for that word to stick, because institutions and employers adapted right along with it.",
+      "The breakthroughs arrived more or less on schedule: reliable multimodal AI by the late 2020s, with capable robotics not far behind. Neither was really a surprise. What people underestimated was how completely organizations would lean into both at once.",
+      "They didn't just automate routine cognitive work like reports, analysis, scheduling, and first drafts. They automated routine physical work on the same timeline, in the same buildings. A hospital that automated its documentation in 2028 was piloting surgical assist and mobility robots by 2031. The two trends everyone expected to unfold separately, AI on screens and robots on floors, ended up braiding together faster than either would have alone.",
+      "Entry level roles absorbed the first wave, the way they always do. Then, more quietly, so did a real slice of mid career work — the parts that were routine even if they weren't junior. It wasn't only the bottom of the ladder that thinned. Routine work thinned out at every level.",
     ],
-    whatChangedTitle: "The résumé had a good run",
-    whatChangedBefore:
-      "Universities didn't get caught flat-footed. They adjusted computer science enrollment early enough that the labor market gave them just enough runway to adjust before the next shift landed. Curriculum moved away from rote problem-solving and toward defended judgment calls, structured around live testing and decision review instead of finished assignments.",
+    whatChangedTitle: "The resume had a good run",
+    whatChangedBefore: [
+      "Universities didn't get caught flat footed. They'd watched computer science enrollment wobble years earlier, and the labor market gave them just enough runway to adjust before the next shift landed. Curricula moved away from anything easy to test or memorize and toward what AI couldn't fake: live problem solving, defended judgment calls, working through messy real problems with other people.",
+      "But the skills survived more easily than the structures that once housed them. Some traditional departments and majors shrank or disappeared, while judgment, communication, and problem solving moved into professional programs, capstones, simulations, and general education. Hiring followed the same shift, with simulations and live assessments becoming more trusted than resumes.",
+      "Live assessment was expensive to build and maintain. Employers increasingly helped fund it because they needed a better way to find people who could actually do the work. The university didn't hand this off. It stayed the place that ran the simulations and awarded the credential, even as its own departments and majors reshuffled underneath that role. The credential didn't move. What sat inside the building holding it did.",
+    ],
     pullQuote:
-      "The ladder didn't get pulled out from under anyone. It got replaced, rung by rung, with something closer to a lattice.",
-    whatChangedAfter:
-      "People moved sideways into new specialties as often as they moved up, guided by constant reskilling instead of steady promotion. Cohort programs, employer-university partnerships, and portfolio reviews became the familiar ways of proving readiness. For people with the time and money to keep climbing, that's invigorating. For everyone else, it's exhausting.",
+      "The ladder didn't get pulled out from under anyone. It got replaced rung by rung with something closer to a lattice.",
+    whatChangedImage: "/futures/future1photo.png",
+    whatChangedAfter: [
+      "People moved sideways into new specialties as often as they moved up, guided by constant reskilling instead of steady promotion. Cohort programs, employer-university partnerships, and portfolio reviews became familiar ways of proving readiness. The career ladder didn't disappear so much as change shape.",
+      "It's the cost of a ladder that never stops moving. You're never finished training, never done proving your judgment, never more than one plateau away from having to learn something again. For people with the time and money to keep climbing, that's invigorating. For everyone else, it's exhausting.",
+    ],
     axisSummary:
       "Technology reshapes work without destabilizing the institutions around it. Universities remain trusted arbiters of readiness, adapting their curricula and assessments as the labor market evolves. The result is a system that keeps working — but demands continuous adaptation from the people inside it.",
     indicatorTitle: "Nothing here looks like a crisis",
-    indicatorSubtitle: "Entry-level hiring declines steadily as AI and robotics reshape the workforce.",
+    indicatorSubtitle: "Entry level hiring declines steadily as AI and robotics reshape the workforce.",
     indicatorData: [
       { year: "2024", value: 82 },
       { year: "2026", value: 70 },
@@ -80,14 +88,14 @@ export const futures: Future[] = [
       {
         role: "Institutional Leader",
         quote:
-          "People act like we got lucky. We didn't. We watched computer science enrollment wobble in the mid-2020s and bet the labor market would keep giving us runway if we moved early enough. We won't pretend the model works for a student who can't afford to keep training indefinitely. We built a system that rewards people who can keep adapting. We never solved what happens to everyone else.",
+          "People act like we got lucky. We didn't. We watched computer science enrollment wobble in the mid-2020s and bet the labor market would keep giving us runway if we moved early enough. But I won't pretend the model works for a student who can't afford to keep training indefinitely. We built a system that rewards people who can keep adapting. We never solved what happened to everyone else.",
         name: "Dr. Aaron Kessler",
         context: "provost, mid-sized public university",
       },
       {
         role: "Employer",
         quote:
-          "Nobody applying here had the pedigree that used to matter, and I've stopped asking for it. What I need is someone who can walk onto a floor where half the routine work is automated and immediately figure out what the humans and the machines each shouldn't do. That's the actual bottleneck now, and it's in shorter supply than the technology is.",
+          "Nobody applying here has the pedigree that used to matter, and I've stopped asking for it. That's partly because we don't need it anymore. Half the routine work on this floor is automated. What I need is someone who can walk onto it and immediately figure out what the humans and the machines each shouldn't be doing. It's the actual bottleneck now, and it's in shorter supply than the technology is.",
         name: "Annika Ibsen",
         context: "Head of Talent, logistics and robotics operations firm",
       },
@@ -142,19 +150,22 @@ export const futures: Future[] = [
     heroHeadline: "The badge that certified nothing",
     heroIntro:
       "By 2036, everyone had some way to prove they were qualified. Degrees, badges, platform scores, certifications. Nobody trusted any of them.",
-    heroImage: "/future2.png",
+    heroImage: "/futures/future2.png",
     howItStartedTitle: "It looked like a better way to prove you could do the work",
     howItStartedBody: [
       "Around 2027, entry-level hiring was already thinning and skepticism about degrees was growing. A new generation of AI-assessed credentialing platforms promised something universities couldn't: proof instead of paper. Upload your work, run it through an AI evaluator, and get a certified competency badge in hours instead of a transcript in four years.",
       "Employers liked it. Students liked it faster. And for a while, without anyone noticing, the credentials got worse. The first platforms were rigorous, reviewing work personally through trained evaluators. As the companies expanded quickly, most of them started outsourcing that review and approving more applicants faster, with less friction. By the time anyone thought to guard against it, badge fraud had become fully verified — and everywhere.",
     ],
     whatChangedTitle: "Nobody knew what to trust anymore",
-    whatChangedBefore:
+    whatChangedBefore: [
       "The platforms lost their credibility within months. Employers didn't just distrust the badges — they stopped trusting portfolios, period. If one verification loop could quietly fail for a year without anyone noticing, no signal felt clean anymore. There was no shared standard to fall back on, and no accreditor had authority over any of the platforms.",
+    ],
     pullQuote:
       "Distrust in one signal simply pushed weight onto the next. Eventually, every signal took its turn being discredited or ignored.",
-    whatChangedAfter:
+    whatChangedImage: "/futures/future2photo.png",
+    whatChangedAfter: [
       "By 2036, readiness isn't something anyone certifies anymore. It's something you spend months proving, one employer at a time, starting from zero every time.",
+    ],
     axisSummary:
       "Trust in traditional credentials breaks down faster than any new system can replace it. Readiness becomes something employers, networks, and individuals verify for themselves, making education and employment more fragmented, and making personal connections increasingly valuable.",
     indicatorTitle: "Trust keeps moving closer to the employer",
@@ -242,19 +253,22 @@ export const futures: Future[] = [
     heroHeadline: "The slow eviction",
     heroIntro:
       "Climate change arrived as a slow eviction. By 2036, that eviction has a geography you can draw on a map — the places people are being pushed out of, and the places absorbing everyone who leaves.",
-    heroImage: "/future3.png",
+    heroImage: "/futures/future3.jpg",
     howItStartedTitle: "Insurance moved first",
     howItStartedBody: [
       "Rising heat, worsening storms, and water shortages made whole regions too risky to insure — places like the Gulf Coast, the Southwest, and low-lying coastal cities. Once a region became uninsurable, homes couldn't be sold or financed there, so people got stuck. That single fact trapped more people in place than the disasters themselves ever did.",
       "Communities didn't empty out because everyone chose to leave. They emptied out because nobody could stay, while people with money and flexibility could leave early. Agriculture shifted at the same time, as food production tilted toward the Great Lakes and the Upper Midwest. The farmland left behind didn't stay empty for long — most of it filled back in with water.",
     ],
     whatChangedTitle: "The ground beneath our feet",
-    whatChangedBefore:
+    whatChangedBefore: [
       "The places people were moving to couldn't absorb them fast enough. Schools in growing regions became overcrowded and underfunded trying to keep up with new students, while schools in shrinking regions faced falling enrollment and aging buildings nobody could justify funding repairs for.",
+    ],
     pullQuote:
       "Jobs meant a means of survival even more so now than ever, as the ground continuously shifts and rumbles by the second.",
-    whatChangedAfter:
+    whatChangedImage: "/futures/future3photo.png",
+    whatChangedAfter: [
       "Heat waves, wildfire smoke, and floods hit often enough that remote learning stopped being a backup plan and became the permanent way school worked. Nobody chose unbundled learning as a philosophy — it's just what's left when the building isn't reliably there.",
+    ],
     axisSummary:
       "Physical and environmental pressures reshape where people can live, learn, and work. Institutions remain important sources of credentialing, but learning becomes more distributed as students and communities adapt to a world where geography is increasingly unstable.",
     indicatorTitle: "Employment follows geography",
@@ -345,18 +359,21 @@ export const futures: Future[] = [
     heroHeadline: "Survival stopped depending on the job",
     heroIntro:
       "Universal Basic Income became more than just a dream. It became a reality that changed what work was for, why people pursued it, and how they proved they could do it.",
-    heroImage: "/future4.png",
+    heroImage: "/futures/future4.png",
     howItStartedTitle: "Work became a choice",
     howItStartedBody: [
       "Universal Basic Income wasn't introduced through a single decision. It emerged over years of growing pressure from widening inequality, AI-driven workforce disruption, and a changing public belief about the purpose of work. By the early 2030s, UBI had become permanent, ensuring a baseline level of financial security regardless of employment.",
       "Once survival no longer depended on holding a job, education changed too. Degrees and prestigious credentials stopped being the sole path to financial stability, so people stopped chasing them by default. Instead, learners chose programs, employers, and learning experiences that aligned with their interests, goals, and values, even when those didn't correlate with employability.",
     ],
     whatChangedTitle: "Education stopped being a safety net",
-    whatChangedBefore:
+    whatChangedBefore: [
       "The shift was about what happened when financial survival was no longer tied to employment. Education shifted from being primarily a gateway to stable work, and toward helping people explore, develop expertise, and continue learning throughout their lives. Success was measured less by job placement and more by personal growth, adaptability, and meaningful contribution.",
+    ],
     pullQuote: "How does one decide what to pursue when they no longer have to worry about survival?",
-    whatChangedAfter:
+    whatChangedImage: "/futures/future4photo.png",
+    whatChangedAfter: [
       "Employment changed alongside education. Employers could no longer rely on financial necessity to attract workers, so they competed through meaningful work, strong culture, and opportunities for growth. Many invested directly in apprenticeships and on-the-job learning to build the talent they needed, placing greater value on demonstrated skill, curiosity, and purpose than traditional credentials alone.",
+    ],
     axisSummary:
       "When financial survival no longer needs to justify itself primarily through economic return, learning becomes more distributed and purposeful, as universities compete with employers and other providers to help people build expertise, meaning, and civic capacity.",
     indicatorTitle: "Work becomes a choice",
