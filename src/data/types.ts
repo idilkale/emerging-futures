@@ -36,7 +36,7 @@ export interface Future {
   employment: string;
   careerMobility: string;
   emergingCareers: string[];
-  careerReadiness: string;
+  careerReadiness: string[];
   aiLevel: number;
   trustLevel: number;
   accent: string;

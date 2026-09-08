@@ -32,8 +32,9 @@ export const futures: Future[] = [
       "AI safety supervisor",
       "Verification and compliance officer",
     ],
-    careerReadiness:
+    careerReadiness: [
       "Judgment, adaptability, and the ability to work across human and machine teams matter more now than any single technical specialty, because the specialty itself has a short shelf life. Success depends less on what someone already knows and more on how fast they can learn the next thing. Time and financial slack become part of what it takes to stay competitive, even in a future where nothing looks broken.",
+    ],
     aiLevel: 78,
     trustLevel: 38,
     accent: "#ff7f32",
@@ -140,8 +141,11 @@ export const futures: Future[] = [
       "Credential forensics specialist",
       "Verification and compliance officer",
     ],
-    careerReadiness:
-      "Nothing external can be counted on to vouch for you anymore — not a degree, not a badge, not a platform score. Readiness becomes something you demonstrate directly and repeatedly, through trial periods that only some people can afford to take.",
+    careerReadiness: [
+      "Nothing external can be counted on to vouch for you anymore. Not a degree, not a badge, not a platform score.",
+      "Readiness becomes something you demonstrate directly and repeatedly, often through extended trial periods that only some people can afford. Experience becomes valuable not just because of what you learned, but because someone with credibility was there to watch you use it.",
+      "The advantage tips toward people who already have networks willing to vouch for them personally. The students with the fewest connections going in are the ones who struggle the most.",
+    ],
     aiLevel: 62,
     trustLevel: 30,
     accent: "#00a3e0",
@@ -153,12 +157,17 @@ export const futures: Future[] = [
     heroImage: "/futures/future2.png",
     howItStartedTitle: "It looked like a better way to prove you could do the work",
     howItStartedBody: [
-      "Around 2027, entry-level hiring was already thinning and skepticism about degrees was growing. A new generation of AI-assessed credentialing platforms promised something universities couldn't: proof instead of paper. Upload your work, run it through an AI evaluator, and get a certified competency badge in hours instead of a transcript in four years.",
-      "Employers liked it. Students liked it faster. And for a while, without anyone noticing, the credentials got worse. The first platforms were rigorous, reviewing work personally through trained evaluators. As the companies expanded quickly, most of them started outsourcing that review and approving more applicants faster, with less friction. By the time anyone thought to guard against it, badge fraud had become fully verified — and everywhere.",
+      "Around 2027, entry level hiring was already thinning and skepticism about degrees was growing. A new generation of AI assessed credentialing platforms promised something universities couldn't: proof instead of paper. Upload your work, run it through an AI evaluator, and get a verified competency badge in hours instead of a transcript in four years.",
+      "Employers liked it. Students liked it even more. It was fast, it was cheap, and for a while, it worked. The first platforms were rigorous. Small teams reviewed the assessments, humans monitored the evaluators, and the credentials meant something partly because so few people had them. But rigor doesn't scale as easily as convenience does.",
+      "By 2029, there were dozens of competing verification services, each with its own standard, its own AI grader, and its own claim to being the trusted one. Employers couldn't easily evaluate the evaluators, so they started accepting whichever badges showed up most often. The badge issuers, competing for that trust, started approving more applicants faster and with less friction. Nobody set out to build a race to the bottom. It became one anyway.",
+      "The break came from an angle nobody had thought to guard because nobody thought they needed to. A mid sized verification platform used heavily in early career tech and design hiring turned out to have trained its evaluator on portfolios that were themselves AI generated. AI made the work. AI graded the work. No human had checked either end in more than a year. It wasn't fraud exactly. It was a system doing what it had been built to do, at a scale nobody had stress tested.",
+      "The badge had certified real competency for real people, right up until it certified none of it. And there was no way from the outside to tell which was which.",
     ],
     whatChangedTitle: "Nobody knew what to trust anymore",
     whatChangedBefore: [
-      "The platforms lost their credibility within months. Employers didn't just distrust the badges — they stopped trusting portfolios, period. If one verification loop could quietly fail for a year without anyone noticing, no signal felt clean anymore. There was no shared standard to fall back on, and no accreditor had authority over any of the platforms.",
+      "The platform lost its contracts within a month. Employers didn't just distrust that badge. They stopped trusting badges, period. If one verification loop could quietly fail for a year without anyone noticing, none of the others could be assumed clean. There was no shared standard to fall back on. No accreditor had authority over the platforms. No single body could point to one credential and say: this one is trustworthy. The degree had already been hollowed out as a signal years earlier. Now its replacement was gone too. For the first time in decades, nobody had a default trusted signal.",
+      "Large employers responded by building their own. Extended trial periods, in house assessment centers, and apprenticeship style programs that ran for six months before an actual offer became normal. It worked for them because they had the money and infrastructure to absorb the cost of evaluating people themselves. Small and mid sized employers didn't have that margin. They fell back on the oldest signal there is: who do we already know, and who vouches for whom? Hiring became more relational and less legible almost overnight. The people with the thinnest networks absorbed nearly all of the cost. First generation students. Career changers. People moving between industries. Anyone without an insider already in the room had to spend longer proving they belonged there.",
+      "There was no single fix because there was no one with the standing to make one stick. Accreditation moved slow. Employers couldn't agree on a shared standard. The platforms had every incentive to keep competing rather than consolidate around one.",
     ],
     pullQuote:
       "Distrust in one signal simply pushed weight onto the next. Eventually, every signal took its turn being discredited or ignored.",
@@ -167,7 +176,7 @@ export const futures: Future[] = [
       "By 2036, readiness isn't something anyone certifies anymore. It's something you spend months proving, one employer at a time, starting from zero every time.",
     ],
     axisSummary:
-      "Trust in traditional credentials breaks down faster than any new system can replace it. Readiness becomes something employers, networks, and individuals verify for themselves, making education and employment more fragmented, and making personal connections increasingly valuable.",
+      "Trust in traditional credentials breaks down faster than any new system can replace it. Readiness becomes something employers, networks, and individuals have to establish for themselves, making education and employment more fragmented, and making personal connections increasingly valuable.",
     indicatorTitle: "Trust keeps moving closer to the employer",
     indicatorSubtitle:
       "More employers are turning to their own apprenticeship programs to develop and assess career readiness, rather than relying on higher education or external credentials.",
@@ -185,23 +194,23 @@ export const futures: Future[] = [
       {
         role: "Faculty",
         quote:
-          "A student's degree used to close the question of whether they could do the work. Now it opens it. Every conversation with an employer starts with them asking how we know what we say we know.",
+          "I used to believe a degree meant something because it had survived four years of scrutiny nobody could fake in aggregate. I watched us trade that for a badge that took an afternoon. I'm not just angry that it broke. I'm disappointed by the culture it created. I look at my incoming students now and they view the coursework as a hurdle to bypass. They want the credential without any interest in the craft. That's why I'm finally walking away.",
         name: "Dr. Renata Osei",
-        context: "assessment design lead, undergraduate programs",
+        context: "twenty-two years teaching design, now running trial-hire assessments for a mid-sized firm",
       },
       {
         role: "Institutional Leader",
         quote:
-          "We didn't chase down one bad actor. We chased the fact that our credential meant the same thing whether a student had earned it through four years of real struggle or four well-written prompts. Once that gap went public, the credential lost value for everyone holding it — including the students who did it the hard way.",
+          "We didn't have a choice. Enrollment was cratering, the degree wasn't landing jobs on its own anymore, and here was a system employers said they trusted more than us. Partnering with the verification platforms wasn't a betrayal of our mission. It was the only version of our mission that still had a budget. I'll defend that decision. I won't pretend it didn't cost us something we haven't gotten back.",
         name: "Marcus Whitfield",
-        context: "provost, mid-sized public university",
+        context: "provost, mid-tier regional university",
       },
       {
         role: "Employer",
         quote:
-          "Everybody still lists what they used to claim on a resume, but nobody here actually believes it until they've watched someone do the job in front of them for real. That's expensive. We'd rather pay for it once than get burned by it every quarter.",
-        name: "Priya Ramachandran",
-        context: "VP Talent, mid-market consulting firm",
+          "Everybody's still fighting about whose stamp should be on the paper. I stopped caring whose stamp it is three years ago. I don't need a verifier. I need six months of watching someone actually do the job before I commit to them permanently. Neither the schools nor the badge companies saw that coming. The answer wasn't a better signal. It was skipping the signal entirely.",
+        name: "Deja Marchetti",
+        context: "VP of Talent, logistics and manufacturing conglomerate",
       },
     ],
     careerHandoffTitle: "The new jobs live in the proof",
@@ -210,8 +219,8 @@ export const futures: Future[] = [
     readinessTitle: "Being qualified means proving it again (and again)",
     closingHeadline: "The credential couldn't speak for you anymore.",
     closingBody: [
-      "The system returned to reputation, references, relationships, and people willing to put their name behind you. That works when the person doing the vouching knows what you're worth — and knows you well enough to say so.",
-      "The university's traditional role was to teach, and to vouch. Now that platforms can lose credibility just as fast as people can, nothing can force trust back into a system that no longer trusts itself.",
+      "The system returned to reputation, references, relationships, and people willing to put their name behind you. That can work when the person doing the vouching knows you. It works less well when you're the person nobody knows yet.",
+      "The university's traditional role was never just to teach. It was to stand behind what you learned. Accreditation can move too slowly. Employers can disagree. Platforms can lose credibility. None can force trust back into a system that no longer has a shared authority.",
     ],
     closingQuestion: "If employers become the validators, what is left for universities to validate?",
   },
@@ -243,8 +252,9 @@ export const futures: Future[] = [
       "Solar and wind installation and maintenance",
       "Water management specialist",
     ],
-    careerReadiness:
+    careerReadiness: [
       "Flexibility stops being a soft skill and becomes the baseline requirement, because entire industries and regions can decline within just a few years, often with no established playbook for whatever replaces them. Hands-on, practical experience earns more weight than credentials tied to one place or one stable industry.",
+    ],
     aiLevel: 38,
     trustLevel: 55,
     accent: "#ffc627",
@@ -349,8 +359,9 @@ export const futures: Future[] = [
       "Employer-side career coach and pipeline recruiter",
       "Industry-specific apprenticeship coordinator",
     ],
-    careerReadiness:
+    careerReadiness: [
       "Career readiness shifts from employability to adaptability and purpose. Instead of preparing students for one predefined career path, education should help them understand what they want, make informed choices, and embrace lifelong learning. Choosing a path takes more self-direction because there's no single expected route left to default into.",
+    ],
     aiLevel: 95,
     trustLevel: 68,
     accent: "#78be20",

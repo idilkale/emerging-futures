@@ -223,9 +223,13 @@ export function FutureDetailPage() {
               <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
                 {future.readinessTitle}
               </h2>
-              <p className="mt-5 text-copy leading-relaxed text-ink/65">
-                {future.careerReadiness}
-              </p>
+              <div className="mt-5 flex flex-col gap-4">
+                {future.careerReadiness.map((p) => (
+                  <p key={p} className="text-copy leading-relaxed text-ink/65">
+                    {p}
+                  </p>
+                ))}
+              </div>
             </Reveal>
           </div>
         </div>
