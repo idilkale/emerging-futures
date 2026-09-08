@@ -49,7 +49,7 @@ export function PersonaModal({ persona, onClose }: PersonaModalProps) {
                 href={asset(`personas-cards/${persona.id}.png`)}
                 download={`${persona.id}-persona-card.png`}
                 aria-label="Download persona card as PNG"
-                className="flex h-9 items-center gap-2 rounded-full border border-paper/30 px-3 text-paper transition-colors duration-300 hover:border-paper md:border-ink/20 md:text-ink md:hover:border-ink"
+                className="flex h-9 items-center gap-2 rounded-full border border-paper/30 bg-navy/70 px-3 text-paper backdrop-blur-sm transition-colors duration-300 hover:border-paper md:border-ink/20 md:bg-paper/90 md:text-ink md:hover:border-ink"
               >
                 <Download className="h-4 w-4" strokeWidth={1.75} />
                 <span className="label-mono hidden sm:inline">Download PNG</span>
@@ -58,7 +58,7 @@ export function PersonaModal({ persona, onClose }: PersonaModalProps) {
                 type="button"
                 onClick={onClose}
                 aria-label="Close"
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-paper/30 text-paper transition-colors duration-300 hover:border-paper md:border-ink/20 md:text-ink md:hover:border-ink"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-paper/30 bg-navy/70 text-paper backdrop-blur-sm transition-colors duration-300 hover:border-paper md:border-ink/20 md:bg-paper/90 md:text-ink md:hover:border-ink"
               >
                 ✕
               </button>

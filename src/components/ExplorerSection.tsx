@@ -109,7 +109,7 @@ export function ExplorerSection() {
             </p>
             <Link
               to="/how-to-read"
-              className="label-mono mt-4 inline-block text-ink/50 transition-colors duration-300 hover:text-ink"
+              className="mt-4 inline-block rounded-none border border-ink/30 px-5 py-2.5 font-sans text-sm text-ink transition-colors duration-300 hover:border-ink"
             >
               How to read the futures →
             </Link>

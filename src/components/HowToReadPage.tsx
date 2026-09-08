@@ -155,12 +155,12 @@ export function HowToReadPage() {
           <Reveal>
             <div className="grid grid-cols-1 gap-8 md:grid-cols-[200px_1fr] md:gap-10">
               <div className="md:mt-28">
-                <span className="label-mono inline-flex items-center bg-explorer-cyan px-4 py-2 text-paper">
+                <span className="label-mono inline-flex items-center justify-center text-center bg-explorer-cyan px-4 py-2 text-paper">
                   Putting It Together
                 </span>
               </div>
 
-              <div>
+              <div className="md:max-w-4xl">
                 <h2 className="text-balance font-sans text-display-3 font-normal leading-[1.05] text-paper">
                   How the forces create a future
                 </h2>
