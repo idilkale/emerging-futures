@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 const STEPS = [
   {
     index: "01",
-    label: "Choose Persona",
+    label: "Select Persona",
     body: "Step into someone else's shoes.",
   },
   {
@@ -39,7 +39,7 @@ export function HowItWorksSection() {
             work changes, what humans and AI are each valuable at, where
             learning and formation happen, what higher education is
             ultimately for, and who bears the risk. Your persona shows how
-            those changes might be experienced from a particular position in
+            those changes might be experienced from a particular learner in
             the system.
           </p>
         </Reveal>

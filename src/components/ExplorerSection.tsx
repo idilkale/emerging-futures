@@ -38,7 +38,7 @@ export function ExplorerSection() {
                   href="#personas"
                   className="rounded-none bg-explorer-cyan px-6 py-3 font-sans text-base text-ink transition-opacity hover:opacity-90"
                 >
-                  Choose your persona
+                  Select your persona
                 </a>
                 <a
                   href="#futures"

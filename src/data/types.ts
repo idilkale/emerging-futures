@@ -1,4 +1,4 @@
-import type { LucideIcon } from "lucide-react";
+import type { ComponentType, SVGProps } from "react";
 
 export interface AxisComparisonRow {
   label: string;
@@ -40,7 +40,7 @@ export interface Future {
   aiLevel: number;
   trustLevel: number;
   accent: string;
-  icon: LucideIcon;
+  icon: ComponentType<SVGProps<SVGSVGElement>>;
 
   // detail-page content
   heroHeadline: string;

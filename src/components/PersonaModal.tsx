@@ -66,10 +66,25 @@ export function PersonaModal({ persona, onClose }: PersonaModalProps) {
 
             {/* front */}
             <div
-              className="flex min-h-0 shrink-0 flex-col justify-between overflow-y-auto bg-navy p-8 md:w-[38%] md:p-10"
+              className="flex min-h-0 shrink-0 flex-col justify-between overflow-y-auto bg-navy p-6 md:w-[38%] md:p-10"
               style={{ "--pcolor": persona.color } as CSSProperties}
             >
-              <div>
+              <div className="flex items-center gap-4 md:hidden">
+                <img
+                  src={asset(persona.photo)}
+                  alt={persona.name}
+                  className="aspect-square w-16 shrink-0 rounded-xl object-cover"
+                />
+                <div className="min-w-0">
+                  <div className="font-sans text-xl font-normal text-paper">{persona.name}</div>
+                  <div className="mt-1 inline-block font-sans text-base font-normal text-ink">
+                    <span className="text-paper">The </span>
+                    <span className="bg-[var(--pcolor)] px-1.5">{persona.archetype.replace(/^The /, "")}</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-4 md:mt-0">
                 <div className="label-mono flex items-center justify-between text-paper/70">
                   <span>
                     {persona.age}, {persona.aiRelationship}
@@ -81,10 +96,10 @@ export function PersonaModal({ persona, onClose }: PersonaModalProps) {
               <img
                 src={asset(persona.photo)}
                 alt={persona.name}
-                className="my-8 aspect-square w-full rounded-xl object-cover"
+                className="hidden aspect-square w-full rounded-xl object-cover md:my-8 md:block"
               />
 
-              <div>
+              <div className="hidden md:block">
                 <div className="font-sans text-2xl font-normal text-paper md:text-3xl">{persona.name}</div>
                 <div className="mt-1 inline-block font-sans text-xl font-normal text-ink md:text-2xl">
                   <span className="text-paper">The </span>

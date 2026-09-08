@@ -1,4 +1,4 @@
-import { Globe, IdCard, Sparkles, Sprout } from "lucide-react";
+import { CollapseIcon, ConstraintIcon, GrowthIcon, TransformationIcon } from "./futureIcons";
 import type { Future } from "./types";
 
 export const futures: Future[] = [
@@ -37,7 +37,7 @@ export const futures: Future[] = [
     aiLevel: 78,
     trustLevel: 38,
     accent: "#ff7f32",
-    icon: Sprout,
+    icon: GrowthIcon,
 
     heroHeadline: "Nobody noticed the ladder disappear",
     heroIntro:
@@ -137,7 +137,7 @@ export const futures: Future[] = [
     aiLevel: 62,
     trustLevel: 30,
     accent: "#00a3e0",
-    icon: IdCard,
+    icon: CollapseIcon,
 
     heroHeadline: "The badge that certified nothing",
     heroIntro:
@@ -237,7 +237,7 @@ export const futures: Future[] = [
     aiLevel: 38,
     trustLevel: 55,
     accent: "#ffc627",
-    icon: Globe,
+    icon: ConstraintIcon,
 
     heroHeadline: "The slow eviction",
     heroIntro:
@@ -340,7 +340,7 @@ export const futures: Future[] = [
     aiLevel: 95,
     trustLevel: 68,
     accent: "#78be20",
-    icon: Sparkles,
+    icon: TransformationIcon,
 
     heroHeadline: "Survival stopped depending on the job",
     heroIntro:

@@ -91,7 +91,7 @@ export const personas: Persona[] = [
     color: "#ff7f32",
     age: 30,
     aiRelationship: "Cautious AI user",
-    photo: "/personas-hq/amina.jpg",
+    photo: "/personas-hq/amina.png",
     background:
       "Amina is a nursing student balancing school, a job as a waitress, and raising her child with help from family. Her clinical schedule makes that balance harder, but she sees nursing as an extension of the caregiving role she has always played. She uses AI cautiously for studying and administrative tasks, but is wary of relying on it for decisions that affect patients.",
     finances: "Paying for school through savings, need-based scholarships, and income from working as a waitress.",
