@@ -51,7 +51,7 @@ export function FutureDetailPage() {
 
         <Reveal delay={2}>
           {future.heroImage ? (
-            <div className="relative aspect-[21/8] w-full overflow-hidden">
+            <div className="relative aspect-[4/3] w-full overflow-hidden md:aspect-[21/8]">
               <img
                 src={asset(future.heroImage)}
                 alt=""
@@ -60,7 +60,7 @@ export function FutureDetailPage() {
             </div>
           ) : (
             <div
-              className="relative flex aspect-[21/8] w-full items-end overflow-hidden"
+              className="relative flex aspect-[4/3] w-full items-end overflow-hidden md:aspect-[21/8]"
               style={{
                 background: `radial-gradient(120% 140% at 15% 0%, ${future.accent}26, transparent 55%), linear-gradient(160deg, #39415a 0%, #1c2333 100%)`,
               }}
