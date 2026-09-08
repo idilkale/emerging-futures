@@ -75,7 +75,7 @@ export function FutureSidebarNav({
         </ul>
         <Link
           to="/#futures"
-          className="mt-6 inline-block rounded-none bg-explorer-cyan px-5 py-2.5 font-sans text-sm text-ink transition-opacity hover:opacity-90"
+          className="mt-6 inline-block rounded-none border border-ink/30 px-5 py-2.5 font-sans text-sm text-ink transition-colors duration-300 hover:border-ink"
         >
           Explore the futures
         </Link>

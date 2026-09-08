@@ -80,7 +80,7 @@ export function FutureDetailPage() {
           <FutureSidebarNav />
         </div>
 
-        <div className="md:col-span-9 md:max-w-2xl">
+        <div className="md:col-span-9 md:max-w-3xl">
           {/* 01 how it started */}
           <div id="how-it-started" className="scroll-mt-32 border-t border-ink/10 pt-12">
             <Reveal>
