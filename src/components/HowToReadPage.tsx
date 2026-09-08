@@ -1,4 +1,4 @@
-import { axisDefinitions } from "../data/axisDefinitions";
+import { axisDefinitions, primaryDriverOptions } from "../data/axisDefinitions";
 import { FutureAxisTable } from "./FutureAxisTable";
 import { FuturePageFooter } from "./FuturePageFooter";
 import { FutureSidebarNav } from "./FutureSidebarNav";
@@ -6,7 +6,7 @@ import { FutureTopNav } from "./FutureTopNav";
 import { Reveal } from "./Reveal";
 
 const SECTIONS = [
-  { id: "seven-axes", label: "The seven axes" },
+  { id: "seven-axes", label: "The seven forces" },
   { id: "understanding-axes", label: "Understanding the axes" },
   { id: "putting-it-together", label: "Putting it together" },
 ];
@@ -33,11 +33,11 @@ export function HowToReadPage() {
             </h1>
           </Reveal>
           <Reveal delay={1} className="md:col-span-5">
-            <p className="text-balance text-edit font-normal leading-relaxed text-ink/60">
+            <p className="text-edit font-normal leading-relaxed text-ink/60">
               The four futures combine different conditions across seven
               forces that shape higher education, work, and learning. Each
               future takes a different position on these axes. Together,
-              those positions create a distinct system and a different
+              these positions create a distinct system and a different
               experience for the people inside it.
             </p>
           </Reveal>
@@ -54,14 +54,15 @@ export function HowToReadPage() {
           {/* 01 the seven axes */}
           <div id="seven-axes" className="scroll-mt-32">
             <Reveal>
-              <SectionEyebrow index="01" label="The Seven Axes" />
+              <SectionEyebrow index="01" label="The Seven Forces" />
               <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
-                The seven axes
+                The seven forces
               </h2>
               <p className="mt-3 text-copy leading-relaxed text-ink/50">
-                Each future is defined by its position across seven forces.
-                The table below shows how those forces combine differently in
-                each scenario.
+                Each future is shaped by the seven forces. The primary driver
+                identifies the main force shaping each future, and the six
+                axes each have two poles. The table shows how these forces
+                come together in each scenario.
               </p>
               <div className="mt-6">
                 <FutureAxisTable activeSlug="" />
@@ -72,17 +73,50 @@ export function HowToReadPage() {
           {/* 02 understanding the axes */}
           <div id="understanding-axes" className="scroll-mt-32 border-t border-ink/10 pt-12 mt-12">
             <Reveal>
-              <SectionEyebrow index="02" label="Understanding The Axes" />
+              <SectionEyebrow index="02" label="Understanding The Forces" />
               <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
-                Understanding the axes
+                Understanding the forces
               </h2>
               <p className="mt-3 text-copy leading-relaxed text-ink/50">
-                Each axis represents a spectrum of possibilities. These
-                definitions explain what each position means and how it
-                shapes the future.
+                The definitions below explain what each force means and how
+                its different positions shape the future.
               </p>
 
-              <div className="mt-10 flex flex-col gap-10">
+              <div className="mt-10">
+                <h3 className="font-sans text-lg font-normal text-ink md:text-xl">
+                  Primary driver
+                </h3>
+                <p className="mt-1 text-copy text-ink/50">
+                  What force is shaping the future?
+                </p>
+                <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  {primaryDriverOptions.map((option) => (
+                    <div
+                      key={option.label}
+                      className="border-t-2 border-explorer-cyan bg-paper-dim/40 p-5"
+                    >
+                      <p className="font-sans text-sm font-normal text-ink">
+                        {option.label}
+                      </p>
+                      <p className="mt-2 text-sm leading-relaxed text-ink/60">
+                        {option.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-10">
+                <h3 className="font-sans text-lg font-normal text-ink md:text-xl">
+                  The axes
+                </h3>
+                <p className="mt-1 text-copy text-ink/50">
+                  Each axis represents a spectrum between two opposing
+                  possibilities.
+                </p>
+              </div>
+
+              <div className="mt-6 flex flex-col gap-10">
                 {axisDefinitions.map((axis) => (
                   <div key={axis.number}>
                     <h3 className="font-sans text-lg font-normal text-ink md:text-xl">
@@ -128,14 +162,14 @@ export function HowToReadPage() {
 
               <div>
                 <h2 className="text-balance font-sans text-display-3 font-normal leading-[1.05] text-paper">
-                  How the axes create a future
+                  How the forces create a future
                 </h2>
 
                 <div className="mt-6 flex flex-col gap-4">
-                  <p className="text-balance text-copy font-normal leading-relaxed text-paper/60">
+                  <p className="text-copy font-normal leading-relaxed text-paper/60">
                     A future where institutions remain trusted, labor changes
                     gradually, AI augments human work, and higher education
-                    remains workforce-focused creates a very different system
+                    remains workforce focused creates a very different system
                     from one where credentials fragment, labor becomes
                     volatile, and learning moves continuously between
                     institutions, employers, and platforms.

@@ -3,6 +3,29 @@ export interface AxisDefinitionOption {
   description: string;
 }
 
+export const primaryDriverOptions: AxisDefinitionOption[] = [
+  {
+    label: "Technological",
+    description:
+      "AI, automation, robotics, and other technologies are the primary forces reshaping work and education.",
+  },
+  {
+    label: "Epistemic",
+    description:
+      "Trust, knowledge, and the ability to determine what is true, credible, or valuable become the primary forces reshaping the system.",
+  },
+  {
+    label: "Physical / Environmental",
+    description:
+      "Climate, geography, resource constraints, and physical conditions shape where people can live, learn, and work.",
+  },
+  {
+    label: "Political / Economic",
+    description:
+      "Changes in policy, economic structures, and the social contract reshape the relationship between work, education, and society.",
+  },
+];
+
 export interface AxisDefinition {
   number: string;
   label: string;
@@ -13,23 +36,6 @@ export interface AxisDefinition {
 export const axisDefinitions: AxisDefinition[] = [
   {
     number: "1",
-    label: "Primary driver",
-    question: "What force is shaping the future?",
-    options: [
-      {
-        label: "Technological",
-        description:
-          "AI, automation, robotics, and other technologies are the primary forces reshaping work and education.",
-      },
-      {
-        label: "Epistemic",
-        description:
-          "Trust, knowledge, and the ability to determine what is true, credible, or valuable become the primary forces reshaping the system.",
-      },
-    ],
-  },
-  {
-    number: "2",
     label: "Credentialing authority",
     question: 'Who gets to say someone is "ready"?',
     options: [
@@ -46,7 +52,7 @@ export const axisDefinitions: AxisDefinition[] = [
     ],
   },
   {
-    number: "3",
+    number: "2",
     label: "Pace of labor change",
     question: "How does the world of work move?",
     options: [
@@ -63,7 +69,7 @@ export const axisDefinitions: AxisDefinition[] = [
     ],
   },
   {
-    number: "4",
+    number: "3",
     label: "Human-AI division",
     question: "What are humans and AI each valuable at?",
     options: [
@@ -80,7 +86,7 @@ export const axisDefinitions: AxisDefinition[] = [
     ],
   },
   {
-    number: "5",
+    number: "4",
     label: "Locus of formation",
     question: "Where does learning and becoming actually happen?",
     options: [
@@ -97,7 +103,7 @@ export const axisDefinitions: AxisDefinition[] = [
     ],
   },
   {
-    number: "6",
+    number: "5",
     label: "Purpose of higher education",
     question: "What is higher education ultimately for?",
     options: [
@@ -114,7 +120,7 @@ export const axisDefinitions: AxisDefinition[] = [
     ],
   },
   {
-    number: "7",
+    number: "6",
     label: "Who bears risk",
     question: "Who carries the risk when the bet on readiness doesn't pay off?",
     options: [

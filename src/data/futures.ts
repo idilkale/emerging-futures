@@ -245,7 +245,7 @@ export const futures: Future[] = [
     careerMobility:
       "Mobility becomes literal as much as professional — career advancement increasingly depends on the ability to relocate, rebuild, and requalify wherever ground remains stable.",
     emergingCareers: [
-      "Vertical hydroponic farming technician",
+      "Vertical/hydroponic farming technician",
       "Insurance and financial risk analyst for climate-exposed properties",
       "Climate relocation planner",
       "Infrastructure engineer for fast-growing areas",
@@ -253,7 +253,7 @@ export const futures: Future[] = [
       "Water management specialist",
     ],
     careerReadiness: [
-      "Flexibility stops being a soft skill and becomes the baseline requirement, because entire industries and regions can decline within just a few years, often with no established playbook for whatever replaces them. Hands-on, practical experience earns more weight than credentials tied to one place or one stable industry.",
+      "Flexibility stops being a soft skill and becomes the new baseline requirement, because entire industries and regions can decline within just a few years, often with no established playbook for whatever replaces them. Hands-on, practical experience carries more weight now than credentials tied to one fixed place or one stable industry.",
     ],
     aiLevel: 38,
     trustLevel: 55,
@@ -262,22 +262,26 @@ export const futures: Future[] = [
 
     heroHeadline: "The slow eviction",
     heroIntro:
-      "Climate change arrived as a slow eviction. By 2036, that eviction has a geography you can draw on a map — the places people are being pushed out of, and the places absorbing everyone who leaves.",
+      "Climate change arrived as a slow eviction. By 2036, that eviction has a geography you can draw on a map: the places people are being pushed out of, and the places absorbing everyone who leaves.",
     heroImage: "/futures/future3.jpg",
     howItStartedTitle: "Insurance moved first",
     howItStartedBody: [
-      "Rising heat, worsening storms, and water shortages made whole regions too risky to insure — places like the Gulf Coast, the Southwest, and low-lying coastal cities. Once a region became uninsurable, homes couldn't be sold or financed there, so people got stuck. That single fact trapped more people in place than the disasters themselves ever did.",
-      "Communities didn't empty out because everyone chose to leave. They emptied out because nobody could stay, while people with money and flexibility could leave early. Agriculture shifted at the same time, as food production tilted toward the Great Lakes and the Upper Midwest. The farmland left behind didn't stay empty for long — most of it filled back in with water.",
+      "Rising heat, worsening storms, and water shortages made whole regions, like the Gulf Coast, the Southwest, and low-lying coastal cities, too risky to insure.",
+      "Once a region's uninsurable, homes can't be sold or financed there, so people get stuck. That single fact trapped more people in place than the disasters themselves ever did.",
+      "Communities didn't empty out because everyone chose to leave. They emptied out because people with money and flexibility could leave early, while everyone else was left holding property nobody would insure.",
+      "Agriculture was collapsing at the same time, so food production shifted toward vertical farms and hydroponics clustered near the regions absorbing all the new arrivals, especially the Great Lakes and the Upper Midwest. The farmland left behind didn't stay empty for long. Most of it filled in with solar.",
     ],
     whatChangedTitle: "The ground beneath our feet",
     whatChangedBefore: [
-      "The places people were moving to couldn't absorb them fast enough. Schools in growing regions became overcrowded and underfunded trying to keep up with new students, while schools in shrinking regions faced falling enrollment and aging buildings nobody could justify funding repairs for.",
+      "The places people were moving couldn't absorb them fast enough. Schools in growing regions became overcrowded and underfunded as they struggled to keep up with new students, while schools in shrinking regions faced falling enrollment and aging buildings with little funding for repairs.",
+      "Heat waves, wildfire smoke, and floods hit often enough that hybrid learning stopped being a backup plan and became the permanent way school worked. Nobody chose unbundled learning as a philosophy. It's just what's left when the building isn't reliably there.",
+      "The burden of climate risk also shifted onto the market and onto individuals. No large-scale relocation insurance or government program helped people move, so only those who could afford to leave early could do so. Everyone else remains trapped in uninsurable regions, carrying the financial and personal risks on their own.",
     ],
     pullQuote:
-      "Jobs meant a means of survival even more so now than ever, as the ground continuously shifts and rumbles by the second.",
+      "Jobs meant a means of survival even more so now than ever as the ground continuously shifts and rumbles by the second.",
     whatChangedImage: "/futures/future3photo.png",
     whatChangedAfter: [
-      "Heat waves, wildfire smoke, and floods hit often enough that remote learning stopped being a backup plan and became the permanent way school worked. Nobody chose unbundled learning as a philosophy — it's just what's left when the building isn't reliably there.",
+      "Employment also changed with geography. Jobs grew in vertical farming, renewable energy, and disaster relocation, while traditional farming, coastal tourism, and insurance declined. Employers increasingly cared less about pedigree and more about a blunt question: can this person relocate, adapt, and solve problems with no playbook?",
     ],
     axisSummary:
       "Physical and environmental pressures reshape where people can live, learn, and work. Institutions remain important sources of credentialing, but learning becomes more distributed as students and communities adapt to a world where geography is increasingly unstable.",
@@ -306,26 +310,26 @@ export const futures: Future[] = [
       {
         role: "Institutional Leader",
         quote:
-          "Everyone wants to say we're drowning, but we're busy — those aren't the same thing. For years I closed a building every other cycle and welcomed letters from good teachers leaving. Now I'm hiring. We've opened two schools in the last fall, and we're breaking ground on a third. I finally have enough students to justify the things a shrinking district can only dream of, like a real technical program, an arts department, and multiple languages. And the kids arriving already know how to learn anywhere — half of them have done it online, in a library, in a relative's kitchen, across three schools in five years. That's not a gap I have to close. My job is to welcome these families, not wish there were fewer of them.",
+          "Everyone wants me to say we're drowning, but we're busy. Those aren't the same thing. For years I closed a building every other cycle and wrote severance letters to good teachers. Now I'm hiring. We opened two schools last fall and we're breaking ground on a third. I finally have enough students to justify the things a shrinking district can only wish for, like a real technical program, an arts department, and three languages. And the kids arriving here already know how to learn anywhere: half of them have done it online, in a library, in a relative's kitchen, across three schools in five years. That's not a gap I have to close. My job is to welcome these families, not to wish there were fewer of them.",
         name: "Dana Rusko",
         context: "superintendent at a Great Lakes school district experiencing rapid growth",
       },
       {
         role: "Employer",
         quote:
-          "I don't ask where someone went to school. I ask if they can move somewhere with six weeks' notice and be useful on day one, because that's the job now. The people who struggle aren't the ones who lack technical skill — plenty of people can learn hydroponics. It's the ones who haven't rebuilt a life somewhere unfamiliar before, the ones without flexibility built in. Nobody's teaching that, and I don't think anyone really can. You either can or you can't.",
+          "I don't ask where someone went to school. I ask if they can move somewhere with six weeks' notice and be useful on day one, because that's the job now. The people who struggle most aren't the ones who lack technical skill. Plenty of people can learn hydroponics. It's the ones who've never had to rebuild a life somewhere unfamiliar before, the ones without flexibility for change. Nobody's teaching that, and I don't think anyone really can. You either can or you can't.",
         name: "Julian Okafor",
         context: "hiring manager specializing in vertical farming operations in the Upper Midwest",
       },
     ],
     careerHandoffTitle: "The new jobs follow the map",
     careerHandoffBody:
-      "As climate change redraws where people can live, work, and learn, careers increasingly focus on supporting growing infrastructure, managing limited resources, and helping people relocate.",
+      "As climate change reshaped where people could live, work shifted to meet new demands. Emerging careers focus on supporting growing communities, adapting critical infrastructure, managing limited resources, and helping people relocate.",
     readinessTitle: "You can't prepare for a place that won't stay put",
     closingHeadline: "Who gets to adapt?",
     closingBody: [
-      "Climate change didn't arrive everywhere equally. The people with the resources to move left early, and everyone else absorbed the biggest losses staying put.",
-      "Schools, infrastructure, and local governments followed the same split. Growing regions expanded to serve new populations, while shrinking regions stretched every service and long-term plan past what was realistic.",
+      "Climate change didn't affect everyone equally. The people with the resources to move left early, while everyone else stayed behind in places losing insurance, jobs, and public investment.",
+      "Schools, infrastructure, and local governments followed the same divide. Growing regions expanded to serve new populations, while shrinking communities struggled to maintain basic services. Political priorities shifted every election cycle, making long-term planning nearly impossible.",
     ],
     closingQuestion:
       "If where you live increasingly determines what opportunities you have, how should education prepare people for a world where they may have to move to find them?",
@@ -360,7 +364,8 @@ export const futures: Future[] = [
       "Industry-specific apprenticeship coordinator",
     ],
     careerReadiness: [
-      "Career readiness shifts from employability to adaptability and purpose. Instead of preparing students for one predefined career path, education should help them understand what they want, make informed choices, and embrace lifelong learning. Choosing a path takes more self-direction because there's no single expected route left to default into.",
+      "Career readiness shifts from employability to adaptability and purpose. Instead of preparing students for one predefined career path, education has to help them understand what they want, make informed choices, and embrace lifelong learning.",
+      "Choosing a path takes more self direction because there's no single expected route left to fall into.",
     ],
     aiLevel: 95,
     trustLevel: 68,
@@ -369,27 +374,30 @@ export const futures: Future[] = [
 
     heroHeadline: "Survival stopped depending on the job",
     heroIntro:
-      "Universal Basic Income became more than just a dream. It became a reality that changed what work was for, why people pursued it, and how they proved they could do it.",
+      "Universal Basic Income became more than just a dream. It became a reality that changed what work was for, why people pursued it, and how they proved what they could do.",
     heroImage: "/futures/future4.png",
     howItStartedTitle: "Work became a choice",
     howItStartedBody: [
-      "Universal Basic Income wasn't introduced through a single decision. It emerged over years of growing pressure from widening inequality, AI-driven workforce disruption, and a changing public belief about the purpose of work. By the early 2030s, UBI had become permanent, ensuring a baseline level of financial security regardless of employment.",
-      "Once survival no longer depended on holding a job, education changed too. Degrees and prestigious credentials stopped being the sole path to financial stability, so people stopped chasing them by default. Instead, learners chose programs, employers, and learning experiences that aligned with their interests, goals, and values, even when those didn't correlate with employability.",
+      "Universal Basic Income (UBI) wasn't introduced through a single decision. It emerged over years of growing pressure from widening inequality, AI driven workforce disruption, and a changing public belief about the purpose of work. By the early 2030s, UBI had become permanent, ensuring a basic level of financial security regardless of employment.",
+      "Once survival was no longer tied to holding a job, education changed too. Degrees and prestigious credentials no longer served as the safest path to financial stability, so people stopped chasing them by default. Instead, learners chose programs, employers, and learning experiences that aligned with their interests, goals, and values, even when those paths were unconventional.",
+      "Universities didn't lose credibility. They simply lost their monopoly on proving someone's worth. When a credential stopped being insurance against poverty, people became freer to pursue what they actually wanted to learn.",
     ],
     whatChangedTitle: "Education stopped being a safety net",
     whatChangedBefore: [
-      "The shift was about what happened when financial survival was no longer tied to employment. Education shifted from being primarily a gateway to stable work, and toward helping people explore, develop expertise, and continue learning throughout their lives. Success was measured less by job placement and more by personal growth, adaptability, and meaningful contribution.",
+      "The shift was about what happened when financial survival was no longer tied to employment.",
+      "Education shifted away from being primarily a gateway to stable work and toward helping people explore purpose, develop expertise, and continue learning throughout their lives. Success was measured less by job placement and more by personal growth, adaptability, and meaningful contribution.",
+      "The role of credentials changed as well. Trust in degrees didn't disappear. They simply became less urgent. With a basic financial floor underneath them, learners could pursue apprenticeships, employer-led training, online programs, and other alternative pathways without risking their livelihood. Universities remained valuable, but they were no longer the default or only route into a career.",
     ],
     pullQuote: "How does one decide what to pursue when they no longer have to worry about survival?",
     whatChangedImage: "/futures/future4photo.png",
     whatChangedAfter: [
-      "Employment changed alongside education. Employers could no longer rely on financial necessity to attract workers, so they competed through meaningful work, strong culture, and opportunities for growth. Many invested directly in apprenticeships and on-the-job learning to build the talent they needed, placing greater value on demonstrated skill, curiosity, and purpose than traditional credentials alone.",
+      "Employment changed alongside education. Employers could no longer rely on financial necessity to attract workers, so they competed through meaningful work, strong cultures, and opportunities for growth. Many invested directly in apprenticeships and on-the-job learning to build the talent they needed, placing greater value on demonstrated skills, curiosity, and purpose than traditional credentials alone.",
     ],
     axisSummary:
-      "When financial survival no longer needs to justify itself primarily through economic return, learning becomes more distributed and purposeful, as universities compete with employers and other providers to help people build expertise, meaning, and civic capacity.",
+      "When financial survival is no longer tied to employment, education no longer has to justify itself primarily through economic return. Learning becomes more distributed and purposeful, while universities compete with employers and other providers to help people build expertise, meaning, and civic capacity.",
     indicatorTitle: "Work becomes a choice",
     indicatorSubtitle:
-      "As financial security became less dependent on employment, employers had to compete for people's time and commitment rather than simply assume they need it for a paycheck.",
+      "As financial security became less dependent on employment, employers had to compete for people's time and commitment rather than simply their need for a paycheck.",
     indicatorData: [
       { year: "2024", value: 76 },
       { year: "2026", value: 68 },
@@ -404,34 +412,35 @@ export const futures: Future[] = [
       {
         role: "Faculty",
         quote:
-          "My classroom used to consist of twenty-year-olds anxious about their first job. Now I have a mix — a thirty-year-old who has never worked a day in her life and isn't in a hurry to, and a man in his sixties who chose this seminar just to understand why he even chose that path. It's almost impossible to build one curriculum for people who need such different things from the same room.",
+          "My classroom used to consist of twenty year olds anxious about their first job. Now it's a nurse in her forties starting over, a nineteen year old who has never worked a day in her life and isn't in a hurry to, a guy who spent six years as an accountant and wants to understand why he even chose that path to begin with. This form of teaching makes me feel alive. I get to help people find meaning and purpose for life and for their careers. It's also nearly impossible to build a standard curriculum for, because none of them need the same thing from me anymore.",
         name: "Tomás Reyes",
-        context: "Professor who previously had an emphasis on career-and-vocation seminar, now teaching a decade later",
+        context:
+          "professor who previously had an emphasis on career services, now teaching a purpose-and-vocation seminar that didn't exist a decade ago",
       },
       {
         role: "Institutional Leader",
         quote:
-          "We nearly closed twice in the early 2020s due to chasing unsustainable job-placement goals. We couldn't have made it as students if UBI didn't save any by giving our students money. Now we're being asked why we haven't hesitated to choose a career in the arts. We still think about whether we would have made it as a college if the transformation hadn't taken place when it did.",
-        name: "Dr. Elaine Braithwaite",
+          "We nearly closed twice in the early 2020s due to chasing unreasonable job placement goals we couldn't help our students meet. UBI didn't save us by giving our students money. It saved us by taking away the reason they were hesitant to choose a career in liberal arts. We rebuilt the entire enrollment model around meaning rather than return on investment. I occasionally think about whether we would have made it as a college if the transformation hadn't taken place when it did.",
+        name: "Dr. Elaine Brathwaite",
         context: "president of a small liberal arts college",
       },
       {
         role: "Employer",
         quote:
-          "I used to assume that if someone was paid well enough, they'd stay and finish the work. What I actually have now is a studio where nobody really needs the paycheck badly enough to tolerate work they don't want to do. A project goes sideways in month three, and I lose people because they decide it's no longer worth their time. I've stopped putting junior workers on anything that takes longer than a month. They get bored, and there's no financial pressure keeping them there. The upside is that people who stay can teach you what they actually want. That's valuable. But someone still has to do the work nobody wants to do, and I'm running out of people willing to be that person.",
+          "I used to assume that if someone was paid well enough, they'd stay and finish the work. What I actually have now is a studio where nobody needs the paycheck badly enough to tolerate work they don't want to do. A project goes sideways in month three, and I lose two people because they decide it's no longer worth their time. I've stopped putting junior workers on anything that takes longer than a month. They get bored. They leave. And there's no financial pressure keeping them there. The universities can celebrate teaching people to know what they want. That's valuable. But someone still has to do the work nobody wants to do. I'm running out of people who see that person being them.",
         name: "Meera Chandrasekaran",
         context: "founder of a mid-size design studio",
       },
     ],
     careerHandoffTitle: "The new jobs live in the choice",
     careerHandoffBody:
-      "As universities stopped being the default gateway into employment, new careers emerged around alternative learning pathways, purpose-driven work, and the growing space between education and employment.",
+      "As universities stopped being the default gateway into employment, new careers emerged around alternative learning pathways, purpose driven work, and the growing space between education and employment.",
     readinessTitle: "Preparing for purpose instead of employment",
     closingHeadline: "Education had to justify itself differently",
     closingBody: [
-      "With financial security guaranteed, people gained the freedom to choose how they learned and worked. But as employers took on a larger role in career education and training, no single institution remained solely responsible for making sure those opportunities were meaningful, or trustworthy, or translatable.",
+      "With financial security guaranteed, people gained the freedom to choose how they learned and worked. But as employers took on a larger role in education and training, no single institution remained responsible for making sure those opportunities were meaningful, trustworthy, or transferable.",
     ],
-    closingQuestion: "If people no longer need a degree to survive, what should education become?",
+    closingQuestion: "If people no longer need a degree to survive, what should education help them become?",
   },
 ];
 
