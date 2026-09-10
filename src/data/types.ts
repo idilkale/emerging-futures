@@ -72,6 +72,7 @@ export interface Persona {
   name: string;
   archetype: string;
   color: string;
+  archetypeTextColor?: "ink" | "paper";
   age: number;
   aiRelationship: string;
   photo: string;

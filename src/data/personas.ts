@@ -4,7 +4,7 @@ export const personas: Persona[] = [
   {
     id: "maya",
     name: "Maya",
-    archetype: "The Creative Refuser",
+    archetype: "The Creative",
     color: "#00a3e0",
     age: 18,
     aiRelationship: "Non-AI user",
@@ -68,6 +68,7 @@ export const personas: Persona[] = [
     name: "Aiyana",
     archetype: "The Experimenter",
     color: "#8c1d40",
+    archetypeTextColor: "paper",
     age: 21,
     aiRelationship: "AI power user",
     photo: "/personas-hq/aiyana.jpg",

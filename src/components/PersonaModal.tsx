@@ -80,7 +80,11 @@ export function PersonaModal({ persona, onClose }: PersonaModalProps) {
                     <div className="font-sans text-xl font-normal text-paper">{persona.name}</div>
                     <div className="mt-1 inline-block font-sans text-base font-normal text-ink">
                       <span className="text-paper">The </span>
-                      <span className="bg-[var(--pcolor)] px-1.5">{persona.archetype.replace(/^The /, "")}</span>
+                      <span
+                        className={`bg-[var(--pcolor)] px-1.5 ${persona.archetypeTextColor === "paper" ? "text-paper" : ""}`}
+                      >
+                        {persona.archetype.replace(/^The /, "")}
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -104,7 +108,11 @@ export function PersonaModal({ persona, onClose }: PersonaModalProps) {
                   <div className="font-sans text-2xl font-normal text-paper md:text-3xl">{persona.name}</div>
                   <div className="mt-1 inline-block font-sans text-xl font-normal text-ink md:text-2xl">
                     <span className="text-paper">The </span>
-                    <span className="bg-[var(--pcolor)] px-1.5">{persona.archetype.replace(/^The /, "")}</span>
+                    <span
+                      className={`bg-[var(--pcolor)] px-1.5 ${persona.archetypeTextColor === "paper" ? "text-paper" : ""}`}
+                    >
+                      {persona.archetype.replace(/^The /, "")}
+                    </span>
                   </div>
                 </div>
               </div>
