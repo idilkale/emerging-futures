@@ -153,9 +153,9 @@ export function HowToReadPage() {
       >
         <div className="container-editorial">
           <Reveal>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-[200px_1fr] md:gap-10">
-              <div className="md:mt-28">
-                <span className="label-mono inline-flex items-center justify-center text-center bg-explorer-cyan px-4 py-2 text-paper">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-[200px_1fr] md:gap-10 md:items-center">
+              <div>
+                <span className="inline-flex items-center justify-center text-center bg-explorer-cyan px-4 py-2 font-sans text-base font-bold uppercase tracking-wide text-ink">
                   Putting It Together
                 </span>
               </div>
