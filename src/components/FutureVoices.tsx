@@ -12,22 +12,20 @@ export function FutureVoices({ voices }: { voices: FutureVoice[] }) {
     <div className="flex flex-col gap-10">
       {voices.map((voice) => (
         <div key={voice.role} className="border-t border-ink/10 pt-8">
-          <h3 className="mb-3 font-sans text-[32px] font-medium leading-[1.35] text-ink">
+          <h3 className="mb-3 font-sans text-[32px] font-bold leading-[1.35] text-ink">
             {voice.role}
           </h3>
-          <p className="text-balance text-copy leading-relaxed text-ink/80">
+          <p className="border-l-2 border-ink/20 pl-5 text-balance text-copy leading-relaxed text-ink/80">
             &ldquo;{voice.quote}&rdquo;
           </p>
           <div className="mt-5 flex items-center gap-3">
-            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-paper-dim">
-              <img
-                src={asset(ROLE_ICONS[voice.role])}
-                alt=""
-                className="h-5 w-5"
-              />
-            </span>
+            <img
+              src={asset(ROLE_ICONS[voice.role])}
+              alt=""
+              className="h-12 w-12 shrink-0"
+            />
             <p className="text-sm text-ink/50">
-              <span className="font-normal text-ink/80">{voice.name}</span>
+              <span className="font-bold text-ink">{voice.name}</span>
               {" — "}
               {voice.context}
             </p>
