@@ -262,7 +262,7 @@ export function FutureDetailPage() {
                   ))}
                 </div>
 
-                <p className="mt-6 text-balance font-sans text-subhead font-normal leading-snug text-paper">
+                <p className="mt-6 font-sans text-subhead font-normal leading-snug text-paper">
                   {future.closingQuestion}
                 </p>
               </div>

@@ -176,7 +176,7 @@ export function HowToReadPage() {
                   </p>
                 </div>
 
-                <p className="mt-6 text-balance font-sans text-subhead font-normal leading-snug text-paper">
+                <p className="mt-6 font-sans text-subhead font-normal leading-snug text-paper">
                   The futures explore what becomes possible and what becomes
                   difficult when these forces move together.
                 </p>
