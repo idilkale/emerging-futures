@@ -84,14 +84,14 @@ export const futures: Future[] = [
         quote:
           "I can tell you if a student is a sharp judge of ambiguous situations after watching them work through live testing and decision making. What I can't tell you anymore is whether they've spent years living with the consequences of a decision. We got faster at measuring judgment. I'm not sure we got better at building it.",
         name: "Dr. Priya Nandakumar",
-        context: "twelve years teaching, now co-designing live-assessment curricula",
+        context: "Twelve years teaching, now co-designing live-assessment curricula",
       },
       {
         role: "Institutional Leader",
         quote:
           "People act like we got lucky. We didn't. We watched computer science enrollment wobble in the mid-2020s and bet the labor market would keep giving us runway if we moved early enough. But I won't pretend the model works for a student who can't afford to keep training indefinitely. We built a system that rewards people who can keep adapting. We never solved what happened to everyone else.",
         name: "Dr. Aaron Kessler",
-        context: "provost, mid-sized public university",
+        context: "Provost, mid-sized public university",
       },
       {
         role: "Employer",
@@ -196,14 +196,14 @@ export const futures: Future[] = [
         quote:
           "I used to believe a degree meant something because it had survived four years of scrutiny nobody could fake in aggregate. I watched us trade that for a badge that took an afternoon. I'm not just angry that it broke. I'm disappointed by the culture it created. I look at my incoming students now and they view the coursework as a hurdle to bypass. They want the credential without any interest in the craft. That's why I'm finally walking away.",
         name: "Dr. Renata Osei",
-        context: "twenty-two years teaching design, now running trial-hire assessments for a mid-sized firm",
+        context: "Twenty-two years teaching design, now running trial-hire assessments for a mid-sized firm",
       },
       {
         role: "Institutional Leader",
         quote:
           "We didn't have a choice. Enrollment was cratering, the degree wasn't landing jobs on its own anymore, and here was a system employers said they trusted more than us. Partnering with the verification platforms wasn't a betrayal of our mission. It was the only version of our mission that still had a budget. I'll defend that decision. I won't pretend it didn't cost us something we haven't gotten back.",
         name: "Marcus Whitfield",
-        context: "provost, mid-tier regional university",
+        context: "Provost, mid-tier regional university",
       },
       {
         role: "Employer",
@@ -305,21 +305,21 @@ export const futures: Future[] = [
         quote:
           "Every year I teach fewer students in a building that's falling apart, and every year the students I do have ask me, not unreasonably, whether staying here to finish their degree is a bet they should even be making. I don't have a good answer. I used to be able to tell students their education was portable no matter where they ended up. Now I'm not sure the institution issuing it is going to still exist by the time they need it to vouch for them.",
         name: "Marisol Trejo",
-        context: "professor at a shrinking Southwest university",
+        context: "Professor at a shrinking Southwest university",
       },
       {
         role: "Institutional Leader",
         quote:
           "Everyone wants me to say we're drowning, but we're busy. Those aren't the same thing. For years I closed a building every other cycle and wrote severance letters to good teachers. Now I'm hiring. We opened two schools last fall and we're breaking ground on a third. I finally have enough students to justify the things a shrinking district can only wish for, like a real technical program, an arts department, and three languages. And the kids arriving here already know how to learn anywhere: half of them have done it online, in a library, in a relative's kitchen, across three schools in five years. That's not a gap I have to close. My job is to welcome these families, not to wish there were fewer of them.",
         name: "Dana Rusko",
-        context: "superintendent at a Great Lakes school district experiencing rapid growth",
+        context: "Superintendent at a Great Lakes school district experiencing rapid growth",
       },
       {
         role: "Employer",
         quote:
           "I don't ask where someone went to school. I ask if they can move somewhere with six weeks' notice and be useful on day one, because that's the job now. The people who struggle most aren't the ones who lack technical skill. Plenty of people can learn hydroponics. It's the ones who've never had to rebuild a life somewhere unfamiliar before, the ones without flexibility for change. Nobody's teaching that, and I don't think anyone really can. You either can or you can't.",
         name: "Julian Okafor",
-        context: "hiring manager specializing in vertical farming operations in the Upper Midwest",
+        context: "Hiring manager specializing in vertical farming operations in the Upper Midwest",
       },
     ],
     careerHandoffTitle: "The new jobs follow the map",
@@ -415,21 +415,21 @@ export const futures: Future[] = [
           "My classroom used to consist of twenty year olds anxious about their first job. Now it's a nurse in her forties starting over, a nineteen year old who has never worked a day in her life and isn't in a hurry to, a guy who spent six years as an accountant and wants to understand why he even chose that path to begin with. This form of teaching makes me feel alive. I get to help people find meaning and purpose for life and for their careers. It's also nearly impossible to build a standard curriculum for, because none of them need the same thing from me anymore.",
         name: "Tomás Reyes",
         context:
-          "professor who previously had an emphasis on career services, now teaching a purpose-and-vocation seminar that didn't exist a decade ago",
+          "Professor who previously had an emphasis on career services, now teaching a purpose-and-vocation seminar that didn't exist a decade ago",
       },
       {
         role: "Institutional Leader",
         quote:
           "We nearly closed twice in the early 2020s due to chasing unreasonable job placement goals we couldn't help our students meet. UBI didn't save us by giving our students money. It saved us by taking away the reason they were hesitant to choose a career in liberal arts. We rebuilt the entire enrollment model around meaning rather than return on investment. I occasionally think about whether we would have made it as a college if the transformation hadn't taken place when it did.",
         name: "Dr. Elaine Brathwaite",
-        context: "president of a small liberal arts college",
+        context: "President of a small liberal arts college",
       },
       {
         role: "Employer",
         quote:
           "I used to assume that if someone was paid well enough, they'd stay and finish the work. What I actually have now is a studio where nobody needs the paycheck badly enough to tolerate work they don't want to do. A project goes sideways in month three, and I lose two people because they decide it's no longer worth their time. I've stopped putting junior workers on anything that takes longer than a month. They get bored. They leave. And there's no financial pressure keeping them there. The universities can celebrate teaching people to know what they want. That's valuable. But someone still has to do the work nobody wants to do. I'm running out of people who see that person being them.",
         name: "Meera Chandrasekaran",
-        context: "founder of a mid-size design studio",
+        context: "Founder of a mid-size design studio",
       },
     ],
     careerHandoffTitle: "The new jobs live in the choice",
