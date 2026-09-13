@@ -15,7 +15,9 @@ export function FutureListRow({ future }: { future: Future }) {
         </span>
 
         <div className="min-w-0 flex-1">
-          <div className="label-mono text-paper">{future.codename}</div>
+          <h4 className="font-sans text-subhead font-medium leading-snug text-paper">
+            {future.codename.charAt(0) + future.codename.slice(1).toLowerCase()}
+          </h4>
           <p className="mt-2 text-balance text-sm leading-relaxed text-paper/55">
             {future.tagline}
           </p>

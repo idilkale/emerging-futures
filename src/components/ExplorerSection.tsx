@@ -78,13 +78,15 @@ export function ExplorerSection() {
           <Reveal delay={2} className="md:col-span-6 md:col-start-7">
             <p className="text-balance text-copy font-normal leading-relaxed text-ink/60">
               Every future looks different depending on where you stand.
-              Choose a persona and experience it from their perspective.
+              Select your persona and experience it from their perspective.
             </p>
           </Reveal>
         </div>
 
         <Reveal delay={3} className="container-editorial mt-14">
-          <PersonaPicker personas={personas} />
+          <div className="mx-auto max-w-[1080px]">
+            <PersonaPicker personas={personas} />
+          </div>
         </Reveal>
       </section>
 
@@ -117,7 +119,7 @@ export function ExplorerSection() {
         </div>
 
         <Reveal delay={3} className="container-editorial mt-14">
-          <div className="mx-auto flex max-w-4xl flex-col">
+          <div className="mx-auto flex max-w-[1080px] flex-col">
             {futures.map((future) => (
               <FutureListRow key={future.id} future={future} />
             ))}

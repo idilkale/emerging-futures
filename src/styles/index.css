@@ -218,7 +218,6 @@ body {
   position: relative;
   background:
     radial-gradient(60% 50% at 20% 15%, rgba(116, 116, 116, 0.4), transparent 60%),
-    radial-gradient(55% 60% at 85% 80%, rgba(255, 198, 39, 0.08), transparent 55%),
     #272f42;
 }
 

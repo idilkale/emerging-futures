@@ -5,7 +5,7 @@ const COLUMNS: { slug: string; key: "growth" | "collapse" | "constraint" | "tran
   { slug: "growth", key: "growth", label: "GROWTH" },
   { slug: "collapse", key: "collapse", label: "COLLAPSE" },
   { slug: "constraint", key: "constraint", label: "CONSTRAINT" },
-  { slug: "transformation", key: "transformation", label: "TRANSFORM" },
+  { slug: "transformation", key: "transformation", label: "TRANSFORMATION" },
 ];
 
 export function FutureAxisTable({ activeSlug }: { activeSlug: string }) {

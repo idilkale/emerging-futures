@@ -338,7 +338,7 @@ export const futures: Future[] = [
     id: "04",
     number: "04",
     slug: "transformation",
-    codename: "TRANSFORM",
+    codename: "TRANSFORMATION",
     title: "Chasing Something Other Than Safety",
     shortTitle: "Transformation",
     tagline:
