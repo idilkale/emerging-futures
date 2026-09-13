@@ -160,7 +160,7 @@ export function HowToReadPage() {
                 </span>
               </div>
 
-              <div className="md:max-w-4xl">
+              <div className="md:max-w-5xl">
                 <h2 className="text-balance font-sans text-display-3 font-normal leading-[1.05] text-paper">
                   How the forces create a future
                 </h2>

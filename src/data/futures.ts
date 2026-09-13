@@ -396,9 +396,9 @@ export const futures: Future[] = [
     ],
     axisSummary:
       "When financial survival is no longer tied to employment, education no longer has to justify itself primarily through economic return. Learning becomes more distributed and purposeful, while universities compete with employers and other providers to help people build expertise, meaning, and civic capacity.",
-    indicatorTitle: "Work becomes a choice",
+    indicatorTitle: "Choice reshaped the market",
     indicatorSubtitle:
-      "As financial security became less dependent on employment, employers had to compete for people's time and commitment rather than simply their need for a paycheck.",
+      "As financial security became less dependent on employment, employers had to compete for people's time and commitment rather than simply their need for a paycheck. With work no longer necessary for survival, fewer people defaulted to university when a degree was no longer necessary to build a career.",
     indicatorData: [
       { year: "2024", value: 76 },
       { year: "2026", value: 68 },
@@ -413,7 +413,7 @@ export const futures: Future[] = [
       {
         role: "Faculty",
         quote:
-          "My classroom used to consist of twenty year olds anxious about their first job. Now it's a nurse in her forties starting over, a nineteen year old who has never worked a day in her life and isn't in a hurry to, a guy who spent six years as an accountant and wants to understand why he even chose that path to begin with. This form of teaching makes me feel alive. I get to help people find meaning and purpose for life and for their careers. It's also nearly impossible to build a standard curriculum for, because none of them need the same thing from me anymore.",
+          "My classroom used to consist of twenty-year-olds anxious about their first job. Now it's a nurse in her forties starting over, a nineteen-year-old who has never worked a day in her life and isn't in a hurry to, a guy who spent six years as an accountant and wants to understand why he even chose that path to begin with. This form of teaching makes me feel alive. I get to help people find meaning and purpose for life and for their careers. It's also nearly impossible to build a standard curriculum because none of them need the same thing from me anymore.",
         name: "Tomás Reyes",
         context:
           "Professor who previously had an emphasis on career services, now teaching a purpose-and-vocation seminar that didn't exist a decade ago",
