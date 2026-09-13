@@ -110,7 +110,7 @@ export const futures: Future[] = [
       "Nothing about this looks like a crisis from the outside. No one's shut out of the system the way they might have been under the old ladder. They're just quietly outpaced by people who can afford to keep training when they can't.",
     ],
     closingQuestion:
-      "If career readiness is no longer a destination you reach at graduation, but a subscription you pay for your entire life, what does a university owe the people who can't afford the updates?",
+      "If career readiness is no longer a destination you reach at graduation, but a subscription you pay for your entire life, how might a university redesign itself to remain a continuous, accessible option for everyone?",
   },
   {
     id: "02",
