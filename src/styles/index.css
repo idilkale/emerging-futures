@@ -216,9 +216,7 @@ body {
 /* atmospheric abstract backgrounds (no external imagery) */
 .atmosphere {
   position: relative;
-  background:
-    radial-gradient(60% 50% at 20% 15%, rgba(116, 116, 116, 0.4), transparent 60%),
-    #272f42;
+  background: #272f42;
 }
 
 .atmosphere-cool {

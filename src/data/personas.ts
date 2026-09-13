@@ -18,7 +18,7 @@ export const personas: Persona[] = [
     successLooksLike:
       "Building a sustainable creative career without compromising what makes her work feel like her own.",
     inTheirShoes:
-      "Given how little time you have outside of school, work, and caregiving, what does your university need to change about how it builds your career readiness so it doesn't demand more time than you actually have?",
+      "Given your commitment to craft over speed, what would you need your university to teach or protect in order to help you build a creative career you could actually sustain?",
     quote:
       "I don't want to spend four years becoming an artist just to end up doing something completely different.",
   },
@@ -41,7 +41,7 @@ export const personas: Persona[] = [
     successLooksLike:
       "Getting financially independent while staying flexible enough to take advantage of new opportunities.",
     inTheirShoes:
-      "Given how little time you have outside of school, work, and caregiving, what does your university need to change about how it builds your career readiness so it doesn't demand more time than you actually have?",
+      "If everyone graduates with access to the same AI tools, what should your university have given you that actually makes you worth hiring?",
     quote: "I don't need my first job to be my dream job. I just need it to get me somewhere.",
   },
   {
@@ -62,7 +62,7 @@ export const personas: Persona[] = [
     successLooksLike:
       "Building a second career without losing the stability, pay, and relationships he has spent decades creating.",
     inTheirShoes:
-      "Given how little time you have outside of school, work, and caregiving, what does your university need to change about how it builds your career readiness so it doesn't demand more time than you actually have?",
+      "Given how much you already know from real-world experience, what should your university be teaching you that you couldn't already learn on the job?",
     quote: "Going back to school at 46 isn't about starting over. It's about making sure I can keep going.",
   },
   {
@@ -84,7 +84,7 @@ export const personas: Persona[] = [
       "Spending years moving from one path to another without ever feeling like she has actually gotten anywhere in her professional career.",
     successLooksLike: "Finding a career that fits who she has become, not just the person she thought she would be at 18.",
     inTheirShoes:
-      "Given how little time you have outside of school, work, and caregiving, what does your university need to change about how it builds your career readiness so it doesn't demand more time than you actually have?",
+      "Given that you're still exploring what career you actually want, what would you need your university to help you build now so that when you do commit, you're career-ready, not just decided?",
     quote: "I'm not starting from zero, I'm just finally admitting that the path I was on wasn't mine.",
   },
   {
@@ -125,7 +125,7 @@ export const personas: Persona[] = [
       "Graduating into an unstable technology industry where he has the skills to build things but cannot find a path into the field due to oversaturation and cuts.",
     successLooksLike: "Building technology that is useful, responsible, and capable of creating opportunities for himself and others.",
     inTheirShoes:
-      "Given how little time you have outside of school, work, and caregiving, what does your university need to change about how it builds your career readiness so it doesn't demand more time than you actually have?",
+      "If the pace of technology keeps outrunning your coursework, what should your university be doing differently to prepare you for a field that keeps changing before you graduate?",
     quote: "I don't want to spend college preparing for a job that doesn't exist when I graduate.",
   },
 ];
