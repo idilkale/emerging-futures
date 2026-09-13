@@ -9,7 +9,7 @@ export interface SidebarSection {
 const DEFAULT_SECTIONS: SidebarSection[] = [
   { id: "how-it-started", label: "How it started" },
   { id: "what-changed", label: "What changed" },
-  { id: "axis-positions", label: "Axis positions" },
+  { id: "axis-positions", label: "Forces positions" },
   { id: "future-indicators", label: "Future indicators" },
   { id: "three-voices", label: "Three voices" },
   { id: "emerging-careers", label: "Emerging careers" },
@@ -74,10 +74,10 @@ export function FutureSidebarNav({
           })}
         </ul>
         <Link
-          to="/#futures"
+          to="/how-to-read"
           className="mt-6 inline-block rounded-none border border-ink/30 px-5 py-2.5 font-sans text-sm text-ink transition-colors duration-300 hover:border-ink"
         >
-          Explore the futures
+          How to read the futures
         </Link>
       </div>
     </nav>

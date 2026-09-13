@@ -16,7 +16,7 @@ export function FutureAxisTable({ activeSlug }: { activeSlug: string }) {
       <table className="w-full min-w-[640px] border-collapse text-left text-sm">
         <thead>
           <tr>
-            <th className="label-mono bg-navy w-[26%] px-4 py-3 font-normal text-paper/60">Axis</th>
+            <th className="label-mono bg-navy w-[26%] px-4 py-3 font-normal text-paper/60">Forces</th>
             {COLUMNS.map((col) => {
               const isActive = col.slug === activeSlug;
               return (
