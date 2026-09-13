@@ -246,7 +246,7 @@ export function FutureDetailPage() {
                 </span>
               </div>
 
-              <div className="md:max-w-4xl">
+              <div className="md:max-w-5xl">
                 <h2 className="text-balance font-sans text-display-3 font-bold leading-[1.05] text-paper">
                   {future.closingHeadline}
                 </h2>
