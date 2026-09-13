@@ -30,14 +30,14 @@ export const axisComparisonRows: AxisComparisonRow[] = [
     transformation: "AI replaces humans",
   },
   {
-    label: "Locus of formation",
+    label: "Where formation occurs",
     growth: "Bounded and institution-centric",
     collapse: "Anywhere, anytime",
     constraint: "Anywhere, anytime",
     transformation: "Anywhere, anytime",
   },
   {
-    label: "Purpose of higher education",
+    label: "Primary purpose of higher education",
     growth: "Prepares people for work",
     collapse: "Prepares people for work",
     constraint: "Prepares people for work",
