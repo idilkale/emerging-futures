@@ -14,7 +14,7 @@ const DEFAULT_SECTIONS: SidebarSection[] = [
   { id: "three-voices", label: "Three voices" },
   { id: "emerging-careers", label: "Emerging careers" },
   { id: "readiness-implications", label: "Readiness implications" },
-  { id: "open-question", label: "Open question" },
+  { id: "open-question", label: "Design question" },
 ];
 
 interface FutureSidebarNavProps {

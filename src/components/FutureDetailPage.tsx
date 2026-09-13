@@ -239,10 +239,10 @@ export function FutureDetailPage() {
       <section id="open-question" className="scroll-mt-32 bg-navy py-20 md:py-28">
         <div className="container-editorial">
           <Reveal>
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-[200px_1fr] md:gap-10">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-[200px_1fr] md:gap-10 md:items-center">
               <div>
-                <span className="inline-flex items-center justify-center text-center bg-explorer-cyan px-4 py-2 font-sans text-base font-bold uppercase tracking-wide text-paper">
-                  Open Question
+                <span className="inline-flex items-center justify-center text-center bg-explorer-cyan px-4 py-2 font-sans text-base font-bold uppercase tracking-wide text-ink">
+                  Design Question
                 </span>
               </div>
 
