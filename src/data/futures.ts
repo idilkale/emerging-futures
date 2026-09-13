@@ -222,7 +222,8 @@ export const futures: Future[] = [
       "The system returned to reputation, references, relationships, and people willing to put their name behind you. That can work when the person doing the vouching knows you. It works less well when you're the person nobody knows yet.",
       "The university's traditional role was never just to teach. It was to stand behind what you learned. Accreditation can move too slowly. Employers can disagree. Platforms can lose credibility. None can force trust back into a system that no longer has a shared authority.",
     ],
-    closingQuestion: "If employers become the validators, what is left for universities to validate?",
+    closingQuestion:
+      "If a credential can no longer be trusted to signal readiness, how might a university redesign itself to rebuild trust with learners and employers that its validation is an accurate reflection of skills and abilities?",
   },
   {
     id: "03",
@@ -332,7 +333,7 @@ export const futures: Future[] = [
       "Schools, infrastructure, and local governments followed the same divide. Growing regions expanded to serve new populations, while shrinking communities struggled to maintain basic services. Political priorities shifted every election cycle, making long-term planning nearly impossible.",
     ],
     closingQuestion:
-      "If where you live increasingly determines what opportunities you have, how should education prepare people for a world where they may have to move to find them?",
+      "If where you live and how quickly you can adjust increasingly determines what career opportunities you have, how might a university redesign itself to prepare people for flexibility and adaptability across career fields and geographies so they are equipped to respond?",
   },
   {
     id: "04",
@@ -440,7 +441,8 @@ export const futures: Future[] = [
     closingBody: [
       "With financial security guaranteed, people gained the freedom to choose how they learned and worked. But as employers took on a larger role in education and training, no single institution remained responsible for making sure those opportunities were meaningful, trustworthy, or transferable.",
     ],
-    closingQuestion: "If people no longer need a degree to survive, what should education help them become?",
+    closingQuestion:
+      "If pursuing a college education is no longer solely about economic gain, how might a university redesign itself to prepare learners to identify their purpose and interests and build a career path connected to meaningful work?",
   },
 ];
 
