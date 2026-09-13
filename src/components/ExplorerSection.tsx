@@ -65,7 +65,7 @@ export function ExplorerSection() {
       {/* personas */}
       <section id="personas" className="bg-paper py-20 text-ink md:py-28">
         <div className="container-editorial">
-          <div className="mx-auto grid max-w-[1152px] grid-cols-1 gap-8 md:grid-cols-12">
+          <div className="mx-auto grid max-w-[1152px] grid-cols-1 gap-8 md:grid-cols-12 md:items-center">
             <div className="md:col-span-5">
               <Reveal>
                 <p className="label-mono text-ink/40">Personas</p>
@@ -95,7 +95,7 @@ export function ExplorerSection() {
       {/* futures */}
       <section id="futures" className="bg-paper py-20 text-ink md:py-28">
         <div className="container-editorial">
-          <div className="mx-auto grid max-w-[1152px] grid-cols-1 gap-8 md:grid-cols-12">
+          <div className="mx-auto grid max-w-[1152px] grid-cols-1 gap-8 md:grid-cols-12 md:items-center">
             <div className="md:col-span-5">
               <Reveal>
                 <p className="label-mono text-ink/40">Futures</p>
