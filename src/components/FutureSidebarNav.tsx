@@ -9,7 +9,7 @@ export interface SidebarSection {
 const DEFAULT_SECTIONS: SidebarSection[] = [
   { id: "how-it-started", label: "How it started" },
   { id: "what-changed", label: "What changed" },
-  { id: "axis-positions", label: "Forces positions" },
+  { id: "axis-positions", label: "Forces" },
   { id: "future-indicators", label: "Future indicators" },
   { id: "three-voices", label: "Three voices" },
   { id: "emerging-careers", label: "Emerging careers" },

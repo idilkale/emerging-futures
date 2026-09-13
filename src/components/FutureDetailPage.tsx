@@ -152,7 +152,7 @@ export function FutureDetailPage() {
           {/* 03 axis positions */}
           <div id="axis-positions" className="scroll-mt-32 border-t border-ink/10 pt-12 mt-12">
             <Reveal>
-              <SectionEyebrow index="03" label="Forces Positions" />
+              <SectionEyebrow index="03" label="Forces" />
               <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
                 The architecture of {future.codename.charAt(0) + future.codename.slice(1).toLowerCase()}
               </h2>
