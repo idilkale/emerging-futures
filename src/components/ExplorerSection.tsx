@@ -64,23 +64,25 @@ export function ExplorerSection() {
 
       {/* personas */}
       <section id="personas" className="bg-paper py-20 text-ink md:py-28">
-        <div className="container-editorial grid grid-cols-1 gap-8 md:grid-cols-12">
-          <div className="md:col-span-5">
-            <Reveal>
-              <p className="label-mono text-ink/40">Personas</p>
-            </Reveal>
-            <Reveal delay={1}>
-              <h2 className="text-balance mt-4 font-sans text-display-3 font-normal leading-[1.05] text-ink">
-                Whose 2036 is it?
-              </h2>
+        <div className="container-editorial">
+          <div className="mx-auto grid max-w-[1152px] grid-cols-1 gap-8 md:grid-cols-12">
+            <div className="md:col-span-5">
+              <Reveal>
+                <p className="label-mono text-ink/40">Personas</p>
+              </Reveal>
+              <Reveal delay={1}>
+                <h2 className="text-balance mt-4 font-sans text-display-3 font-normal leading-[1.05] text-ink">
+                  Whose 2036 is it?
+                </h2>
+              </Reveal>
+            </div>
+            <Reveal delay={2} className="md:col-span-6 md:col-start-7">
+              <p className="text-balance text-copy font-normal leading-relaxed text-ink/60">
+                Every future looks different depending on where you stand.
+                Select your persona and experience it from their perspective.
+              </p>
             </Reveal>
           </div>
-          <Reveal delay={2} className="md:col-span-6 md:col-start-7">
-            <p className="text-balance text-copy font-normal leading-relaxed text-ink/60">
-              Every future looks different depending on where you stand.
-              Select your persona and experience it from their perspective.
-            </p>
-          </Reveal>
         </div>
 
         <Reveal delay={3} className="container-editorial mt-14">
@@ -92,30 +94,32 @@ export function ExplorerSection() {
 
       {/* futures */}
       <section id="futures" className="bg-paper py-20 text-ink md:py-28">
-        <div className="container-editorial grid grid-cols-1 gap-8 md:grid-cols-12">
-          <div className="md:col-span-5">
-            <Reveal>
-              <p className="label-mono text-ink/40">Futures</p>
-            </Reveal>
-            <Reveal delay={1}>
-              <h2 className="text-balance mt-4 font-sans text-display-3 font-normal leading-[1.05] text-ink">
-                Choose your future
-              </h2>
+        <div className="container-editorial">
+          <div className="mx-auto grid max-w-[1152px] grid-cols-1 gap-8 md:grid-cols-12">
+            <div className="md:col-span-5">
+              <Reveal>
+                <p className="label-mono text-ink/40">Futures</p>
+              </Reveal>
+              <Reveal delay={1}>
+                <h2 className="text-balance mt-4 font-sans text-display-3 font-normal leading-[1.05] text-ink">
+                  Choose your future
+                </h2>
+              </Reveal>
+            </div>
+            <Reveal delay={2} className="md:col-span-6 md:col-start-7">
+              <p className="text-balance text-copy font-normal leading-relaxed text-ink/60">
+                Each future is a possible 2036, told from multiple angles: how
+                it started, how it unfolded, who lives with the consequences,
+                and what questions remain.
+              </p>
+              <Link
+                to="/how-to-read"
+                className="mt-4 inline-block rounded-none border border-ink/30 px-5 py-2.5 font-sans text-sm text-ink transition-colors duration-300 hover:border-ink"
+              >
+                How to read the futures →
+              </Link>
             </Reveal>
           </div>
-          <Reveal delay={2} className="md:col-span-6 md:col-start-7">
-            <p className="text-balance text-copy font-normal leading-relaxed text-ink/60">
-              Each future is a possible 2036, told from multiple angles: how
-              it started, how it unfolded, who lives with the consequences,
-              and what questions remain.
-            </p>
-            <Link
-              to="/how-to-read"
-              className="mt-4 inline-block rounded-none border border-ink/30 px-5 py-2.5 font-sans text-sm text-ink transition-colors duration-300 hover:border-ink"
-            >
-              How to read the futures →
-            </Link>
-          </Reveal>
         </div>
 
         <Reveal delay={3} className="container-editorial mt-14">
