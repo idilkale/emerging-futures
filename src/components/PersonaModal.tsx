@@ -121,29 +121,29 @@ export function PersonaModal({ persona, onClose }: PersonaModalProps) {
               <div className="min-h-0 flex-1 overflow-y-auto bg-paper p-8 md:p-10">
                 <dl className="flex flex-col gap-6">
                   <div>
-                    <dt className="label-mono text-ink/40">Background</dt>
+                    <dt className="label-mono text-[#747474]">Background</dt>
                     <dd className="mt-2 text-copy leading-relaxed text-ink/75">{persona.background}</dd>
                   </div>
                   <div>
-                    <dt className="label-mono text-ink/40">Finances</dt>
+                    <dt className="label-mono text-[#747474]">Finances</dt>
                     <dd className="mt-2 text-copy leading-relaxed text-ink/75">{persona.finances}</dd>
                   </div>
                   <div>
-                    <dt className="label-mono text-ink/40">Worldview</dt>
+                    <dt className="label-mono text-[#747474]">Worldview</dt>
                     <dd className="mt-2 text-copy leading-relaxed text-ink/75">{persona.worldview}</dd>
                   </div>
                   <div>
-                    <dt className="label-mono text-ink/40">Strengths</dt>
+                    <dt className="label-mono text-[#747474]">Strengths</dt>
                     <dd className="mt-2 text-copy leading-relaxed text-ink/75">
                       {persona.strengths.join(", ")}
                     </dd>
                   </div>
                   <div>
-                    <dt className="label-mono text-ink/40">Biggest fear</dt>
+                    <dt className="label-mono text-[#747474]">Biggest fear</dt>
                     <dd className="mt-2 text-copy leading-relaxed text-ink/75">{persona.biggestFear}</dd>
                   </div>
                   <div>
-                    <dt className="label-mono text-ink/40">Success looks like</dt>
+                    <dt className="label-mono text-[#747474]">Success looks like</dt>
                     <dd className="mt-2 text-copy leading-relaxed text-ink/75">{persona.successLooksLike}</dd>
                   </div>
                 </dl>
@@ -151,7 +151,7 @@ export function PersonaModal({ persona, onClose }: PersonaModalProps) {
                 <span className="mt-8 block h-px w-full" style={{ background: persona.color }} />
 
                 <div className="mt-8">
-                  <p className="label-mono text-ink/40">In their shoes</p>
+                  <p className="label-mono text-[#747474]">In their shoes</p>
                   <p className="mt-2 text-balance font-sans text-lg leading-snug text-ink">{persona.inTheirShoes}</p>
                 </div>
 

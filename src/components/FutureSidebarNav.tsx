@@ -52,7 +52,7 @@ export function FutureSidebarNav({
   return (
     <nav className="hidden h-full md:block">
       <div className="sticky top-32">
-        <p className="label-mono mb-5 text-ink/35">{title}</p>
+        <p className="label-mono mb-5 text-[#747474]">{title}</p>
         <ul className="flex flex-col gap-1 border-l border-ink/10">
           {sections.map((section) => {
             const isActive = activeId === section.id;

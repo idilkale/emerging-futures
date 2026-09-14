@@ -13,7 +13,7 @@ const SECTIONS = [
 
 function SectionEyebrow({ index, label }: { index: string; label: string }) {
   return (
-    <p className="label-mono mb-4 text-ink/40">
+    <p className="label-mono mb-4 text-[#747474]">
       {index} — {label}
     </p>
   );
@@ -50,7 +50,7 @@ export function HowToReadPage() {
           <FutureSidebarNav title="On This Page" sections={SECTIONS} />
         </div>
 
-        <div className="md:col-span-9 md:max-w-2xl">
+        <div className="md:col-span-9 md:max-w-4xl">
           {/* 01 the seven axes */}
           <div id="seven-axes" className="scroll-mt-32">
             <Reveal>
