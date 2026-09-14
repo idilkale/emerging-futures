@@ -123,20 +123,26 @@ export function HowToReadPage() {
                       {axis.number} - {axis.label}
                     </h3>
                     <p className="mt-1 text-copy text-ink/50">{axis.question}</p>
-                    <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                      {axis.options.map((option) => (
-                        <div
-                          key={option.label}
-                          className="border-t-2 border-explorer-cyan bg-paper-dim/40 p-5"
-                        >
-                          <p className="font-sans text-sm font-normal text-ink">
-                            {option.label}
-                          </p>
-                          <p className="mt-2 text-sm leading-relaxed text-ink/60">
-                            {option.description}
-                          </p>
-                        </div>
-                      ))}
+                    <div className="mt-4 flex flex-col items-stretch gap-4 sm:flex-row sm:items-center">
+                      <div className="border-t-2 border-explorer-cyan bg-paper-dim/40 p-5 sm:flex-1">
+                        <p className="font-sans text-sm font-normal text-ink">
+                          {axis.options[0].label}
+                        </p>
+                        <p className="mt-2 text-sm leading-relaxed text-ink/60">
+                          {axis.options[0].description}
+                        </p>
+                      </div>
+                      <span className="shrink-0 rotate-90 text-center text-lg text-ink/30 sm:rotate-0">
+                        &harr;
+                      </span>
+                      <div className="border-t-2 border-explorer-cyan bg-paper-dim/40 p-5 sm:flex-1">
+                        <p className="font-sans text-sm font-normal text-ink">
+                          {axis.options[1].label}
+                        </p>
+                        <p className="mt-2 text-sm leading-relaxed text-ink/60">
+                          {axis.options[1].description}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 ))}
