@@ -83,7 +83,7 @@ export function HowToReadPage() {
               </p>
 
               <div className="mt-10">
-                <h4 className="font-sans text-lg font-bold text-ink md:text-xl">
+                <h4 className="font-sans text-subhead font-bold leading-snug text-ink">
                   Primary driver
                 </h4>
                 <p className="mt-1 text-copy text-ink/50">
@@ -107,7 +107,7 @@ export function HowToReadPage() {
               </div>
 
               <div className="mt-10">
-                <h4 className="font-sans text-lg font-bold text-ink md:text-xl">
+                <h4 className="font-sans text-subhead font-bold leading-snug text-ink">
                   The axes
                 </h4>
                 <p className="mt-1 text-copy text-ink/50">
