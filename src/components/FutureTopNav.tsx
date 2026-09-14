@@ -25,7 +25,7 @@ export function FutureTopNav({ activeSlug }: FutureTopNavProps) {
                 to={`/futures/${future.slug}`}
                 className={[
                   "label-mono relative shrink-0 py-3 transition-colors duration-300",
-                  isActive ? "font-bold text-ink" : "text-ink/40 hover:text-ink/70",
+                  isActive ? "!font-bold text-ink" : "text-ink/40 hover:text-ink/70",
                 ].join(" ")}
               >
                 {future.codename}
