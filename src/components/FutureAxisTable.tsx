@@ -2,10 +2,10 @@ import { axisComparisonRows } from "../data/axisComparison";
 import { getFutureAccent, hexToRgba } from "../data/futureAccents";
 
 const COLUMNS: { slug: string; key: "growth" | "collapse" | "constraint" | "transformation"; label: string }[] = [
-  { slug: "growth", key: "growth", label: "GROWTH" },
-  { slug: "collapse", key: "collapse", label: "COLLAPSE" },
-  { slug: "constraint", key: "constraint", label: "CONSTRAINT" },
-  { slug: "transformation", key: "transformation", label: "TRANSFORMATION" },
+  { slug: "growth", key: "growth", label: "Growth" },
+  { slug: "collapse", key: "collapse", label: "Collapse" },
+  { slug: "constraint", key: "constraint", label: "Constraint" },
+  { slug: "transformation", key: "transformation", label: "Transformation" },
 ];
 
 export function FutureAxisTable({ activeSlug }: { activeSlug: string }) {
@@ -16,13 +16,13 @@ export function FutureAxisTable({ activeSlug }: { activeSlug: string }) {
       <table className="w-full min-w-[640px] border-collapse text-left text-sm">
         <thead>
           <tr>
-            <th className="label-mono bg-navy w-[26%] px-4 py-3 font-normal text-[#747474]">Forces</th>
+            <th className="bg-navy w-[26%] px-4 py-3 font-sans font-bold text-[#747474]">Forces</th>
             {COLUMNS.map((col) => {
               const isActive = col.slug === activeSlug;
               return (
                 <th
                   key={col.slug}
-                  className="label-mono px-4 py-3 font-normal text-paper"
+                  className="px-4 py-3 font-sans font-bold text-paper"
                   style={isActive ? { backgroundColor: accent } : { backgroundColor: "#272f42" }}
                 >
                   {col.label}
