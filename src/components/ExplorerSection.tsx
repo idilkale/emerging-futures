@@ -23,12 +23,12 @@ export function ExplorerSection() {
         <div className="container-editorial relative z-10 pb-36 pt-28 md:pb-48 md:pt-40 lg:pb-64 lg:pt-48">
           <div className="max-w-[1150px]">
             <Reveal>
-              <h1 className="whitespace-nowrap font-sans text-[62px] font-bold leading-[1.1] text-paper">
+              <h1 className="whitespace-nowrap font-sans text-[34px] font-bold leading-[1.1] text-paper sm:text-[46px] md:text-[62px]">
                 Welcome to 2036
               </h1>
             </Reveal>
             <Reveal delay={1}>
-              <p className="mt-6 max-w-none whitespace-nowrap text-balance text-edit font-normal leading-relaxed text-paper/65">
+              <p className="mt-6 max-w-none whitespace-normal text-balance text-base font-normal leading-relaxed text-paper/65 md:whitespace-nowrap md:text-edit">
                 What does it mean to be career-ready when the goalpost keeps moving?
               </p>
             </Reveal>
