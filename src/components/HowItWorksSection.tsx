@@ -25,7 +25,7 @@ export function HowItWorksSection() {
         <div className="mx-auto grid max-w-[1152px] grid-cols-1 gap-10 md:grid-cols-12">
           <div className="md:col-span-5">
             <Reveal>
-              <p className="label-mono text-[#747474]">How It Works</p>
+              <p className="label-mono !font-medium text-[#747474]">How It Works</p>
             </Reveal>
             <Reveal delay={1}>
               <h2 className="text-balance mt-4 font-sans text-display-3 font-bold leading-[1.05] text-ink">
@@ -49,7 +49,7 @@ export function HowItWorksSection() {
               <div className="mt-8 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2">
                 {STEPS.map((step) => (
                   <div key={step.index} className="border-t-2 border-explorer-cyan pt-3">
-                    <p className="label-mono text-[#747474]">
+                    <p className="label-mono !font-medium text-[#747474]">
                       {step.index} — {step.label.toUpperCase()}
                     </p>
                     <p className="mt-3 text-copy leading-relaxed text-ink/60">{step.body}</p>

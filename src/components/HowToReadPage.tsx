@@ -13,7 +13,7 @@ const SECTIONS = [
 
 function SectionEyebrow({ index, label }: { index: string; label: string }) {
   return (
-    <p className="label-mono mb-4 text-[#747474]">
+    <p className="label-mono !font-medium mb-4 text-[#747474]">
       {index} — {label}
     </p>
   );

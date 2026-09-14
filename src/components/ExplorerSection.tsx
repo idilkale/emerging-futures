@@ -68,7 +68,7 @@ export function ExplorerSection() {
           <div className="mx-auto grid max-w-[1152px] grid-cols-1 gap-8 md:grid-cols-12 md:items-center">
             <div className="md:col-span-5">
               <Reveal>
-                <p className="label-mono text-[#747474]">Personas</p>
+                <p className="label-mono !font-medium text-[#747474]">Personas</p>
               </Reveal>
               <Reveal delay={1}>
                 <h2 className="text-balance mt-4 font-sans text-display-3 font-bold leading-[1.05] text-ink">
@@ -98,7 +98,7 @@ export function ExplorerSection() {
           <div className="mx-auto grid max-w-[1152px] grid-cols-1 gap-8 md:grid-cols-12 md:items-center">
             <div className="md:col-span-5">
               <Reveal>
-                <p className="label-mono text-[#747474]">Futures</p>
+                <p className="label-mono !font-medium text-[#747474]">Futures</p>
               </Reveal>
               <Reveal delay={1}>
                 <h2 className="text-balance mt-4 font-sans text-display-3 font-bold leading-[1.05] text-ink">
