@@ -28,17 +28,17 @@ export function HowToReadPage() {
       <section className="border-b border-ink/10 pb-14 pt-14 md:pb-20 md:pt-20">
         <div className="container-editorial grid grid-cols-1 gap-8 md:grid-cols-12 md:gap-10">
           <Reveal className="md:col-span-7">
-            <h1 className="text-balance font-sans text-display-2 font-normal leading-[1.03] text-ink">
+            <h1 className="text-balance font-sans text-display-2 font-bold leading-[1.03] text-ink">
               How to read the futures
             </h1>
           </Reveal>
           <Reveal delay={1} className="md:col-span-5">
             <p className="text-edit font-normal leading-relaxed text-ink/60">
               The four futures combine different conditions across seven
-              forces that shape higher education, work, and learning. Each
-              future takes a different position on these axes. Together,
-              these positions create a distinct system and a different
-              experience for the people inside it.
+              forces shaping higher education, work, and learning. Each
+              future takes a different position across these forces,
+              creating a distinct system and experience for the people
+              within it.
             </p>
           </Reveal>
         </div>
@@ -55,7 +55,7 @@ export function HowToReadPage() {
           <div id="seven-axes" className="scroll-mt-32">
             <Reveal>
               <SectionEyebrow index="01" label="The Seven Forces" />
-              <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
+              <h2 className="text-balance font-sans text-display-3 font-bold leading-tight text-ink">
                 The seven forces
               </h2>
               <p className="mt-3 text-copy leading-relaxed text-ink/50">
@@ -74,7 +74,7 @@ export function HowToReadPage() {
           <div id="understanding-axes" className="scroll-mt-32 border-t border-ink/10 pt-12 mt-12">
             <Reveal>
               <SectionEyebrow index="02" label="Understanding The Forces" />
-              <h2 className="text-balance font-sans text-display-3 font-normal leading-tight text-ink">
+              <h2 className="text-balance font-sans text-display-3 font-bold leading-tight text-ink">
                 Understanding the forces
               </h2>
               <p className="mt-3 text-copy leading-relaxed text-ink/50">
@@ -83,9 +83,9 @@ export function HowToReadPage() {
               </p>
 
               <div className="mt-10">
-                <h3 className="font-sans text-lg font-normal text-ink md:text-xl">
+                <h4 className="font-sans text-lg font-bold text-ink md:text-xl">
                   Primary driver
-                </h3>
+                </h4>
                 <p className="mt-1 text-copy text-ink/50">
                   What force is shaping the future?
                 </p>
@@ -107,9 +107,9 @@ export function HowToReadPage() {
               </div>
 
               <div className="mt-10">
-                <h3 className="font-sans text-lg font-normal text-ink md:text-xl">
+                <h4 className="font-sans text-lg font-bold text-ink md:text-xl">
                   The axes
-                </h3>
+                </h4>
                 <p className="mt-1 text-copy text-ink/50">
                   Each axis represents a spectrum between two opposing
                   possibilities.
@@ -119,7 +119,7 @@ export function HowToReadPage() {
               <div className="mt-6 flex flex-col gap-10">
                 {axisDefinitions.map((axis) => (
                   <div key={axis.number}>
-                    <h3 className="font-sans text-lg font-normal text-ink md:text-xl">
+                    <h3 className="font-sans text-lg font-bold text-ink md:text-xl">
                       {axis.number} - {axis.label}
                     </h3>
                     <p className="mt-1 text-copy text-ink/50">{axis.question}</p>
@@ -161,7 +161,7 @@ export function HowToReadPage() {
               </div>
 
               <div className="md:max-w-5xl">
-                <h2 className="text-balance font-sans text-display-3 font-normal leading-[1.05] text-paper">
+                <h2 className="text-balance font-sans text-display-3 font-bold leading-[1.05] text-paper">
                   How the forces create a future
                 </h2>
 

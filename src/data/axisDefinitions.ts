@@ -87,7 +87,7 @@ export const axisDefinitions: AxisDefinition[] = [
   },
   {
     number: "4",
-    label: "Locus of formation",
+    label: "Where formation occurs",
     question: "Where does learning and becoming actually happen?",
     options: [
       {
@@ -104,7 +104,7 @@ export const axisDefinitions: AxisDefinition[] = [
   },
   {
     number: "5",
-    label: "Purpose of higher education",
+    label: "Primary purpose of higher education",
     question: "What is higher education ultimately for?",
     options: [
       {
