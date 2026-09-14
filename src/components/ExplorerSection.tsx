@@ -20,7 +20,7 @@ export function ExplorerSection() {
 
       {/* hero */}
       <section className="atmosphere grain relative overflow-hidden">
-        <div className="container-editorial relative z-10 py-32 md:py-44 lg:py-56">
+        <div className="container-editorial relative z-10 pb-36 pt-28 md:pb-48 md:pt-40 lg:pb-64 lg:pt-48">
           <div className="max-w-[1150px]">
             <Reveal>
               <h1 className="whitespace-nowrap font-sans text-display-1 font-bold leading-[0.98] text-paper">
